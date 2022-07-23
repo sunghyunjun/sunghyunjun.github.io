@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>go on Sunghyun Jun Dev Note</title>
+    <link>https://sunghyunjun.github.io/categories/go/</link>
+    <description>Recent content in go on Sunghyun Jun Dev Note</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko-kr</language>
+    <lastBuildDate>Sun, 03 Apr 2022 22:00:00 +0900</lastBuildDate><atom:link href="https://sunghyunjun.github.io/categories/go/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Shared Library Path 이해와 cgo 사용하기</title>
+      <link>https://sunghyunjun.github.io/posts/shared-library-path-with-cgo/</link>
+      <pubDate>Sun, 03 Apr 2022 22:00:00 +0900</pubDate>
+      
+      <guid>https://sunghyunjun.github.io/posts/shared-library-path-with-cgo/</guid>
+      <description>Shared Library를 cgo와 함께 사용하는데 있어 도움이 되는 정보를 기록합니다.
+LD_LIBRARY_PATH LD_LIBRARY_PATH는 각종 library를 사용할 때 참조 path 문제를 해결하고자 사용하곤 합니다.
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/path/to/shared/lib 위와 같은 식으로 사용이 가능합니다. 하지만 LD_LIBRARY_PATH 쉘 환경변수 설정은 디버깅, 개발 시에만 제한적으로 사용되는 것이 바람직합니다.
+Why LD_LIBRARY_PATH is Bad 위의 주제로 구글링을 해보면 많은 글들을 찾아볼 수 있습니다. 그 중 일부를 살펴보면 아래와 같습니다.
+Why LD_LIBRARY_PATH is bad
+When should I set LD_LIBRARY_PATH?
+LD_LIBRARY_PATH is used in preference to any run time or default system linker path.</description>
+    </item>
+    
+  </channel>
+</rss>
