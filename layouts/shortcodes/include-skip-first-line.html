@@ -1,0 +1,13 @@
+{{ $file := .Get 0 }}
+
+{{ if strings.HasSuffix $file ".md" }}
+
+{{ $file := $file | readFile }}
+
+{{ $file := split $file "\n" }}
+{{ $file := after 1 $file }}
+{{ $file := delimit $file "\n" }}
+
+{{ $file | safeHTML }}
+
+{{ end }}

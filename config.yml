@@ -1,0 +1,112 @@
+baseURL: https://sunghyunjun.github.io/
+languageCode: ko-kr
+title: Sunghyun Jun Dev Note
+theme: "PaperMod"
+ignoreFiles: blog-example
+
+taxonomies:
+  category: categories
+  tag: tags
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+googleAnalytics: G-EFNS08FGBV
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+params:
+  env: production # to enable google analytics, opengraph, twitter-cards and schema.
+  title: Sunghyun Jun Dev Note
+  description: "Sunghyun Jun Dev Note"
+  keywords: [Blog, Portfolio, PaperMod]
+  author: Sunghyun Jun
+    # images: ["<link or path of image for opengraph, twitter-cards>"]
+  DateFormat: "January 2, 2006"
+  defaultTheme: auto # dark, light
+  disableThemeToggle: false
+
+  ShowReadingTime: true
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowWordCount: true
+  ShowRssButtonInSectionTermList: true
+  UseHugoToc: true
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  comments: false
+  hidemeta: false
+  hideSummary: false
+  showtoc: false
+  tocopen: false
+
+  # assets:
+    # disableHLJS: true # to disable highlight.js
+    # disableFingerprinting: true
+    # favicon: "<link / abs url>"
+    # favicon16x16: "<link / abs url>"
+    # favicon32x32: "<link / abs url>"
+    # apple_touch_icon: "<link / abs url>"
+    # safari_pinned_tab: "<link / abs url>"
+
+  # home-info mode
+  homeInfoParams:
+    Title: "Hi, I'm Sunghyun Jun \U0001F44B"
+    Content: Develop services using machine learning for speech and language.
+
+  socialIcons:
+    - name: email
+      url: "mailto:sunghyunjun1224@gmail.com"
+    - name: github
+      url: "https://github.com/sunghyunjun"
+    - name: kaggle
+      url: "https://www.kaggle.com/sunghyunjun"
+
+
+  analytics:
+    google:
+      SiteVerificationTag: "DIWwwU8ckTOPhkZdU_PgbNYw984L1km4b9KMFF6mD5A"
+    naver:
+      SiteVerificationTag: "7a0f56cfc3f5f2d152ff08dd9238b3dcabe5dbfc"
+
+  cover:
+    hidden: true # hide everywhere but not in structured data
+    hiddenInList: true # hide on list pages and home
+    hiddenInSingle: true # hide on single page
+
+  # for search
+  # https://fusejs.io/api/options.html
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    keys: ["title", "permalink", "summary", "content"]
+menu:
+  main:
+    - identifier: categories
+      name: categories
+      url: /categories/
+      weight: 10
+    - identifier: tags
+      name: tags
+      url: /tags/
+      weight: 20
+# Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
+pygmentsUseClasses: true
+markup:
+  highlight:
+    noClasses: false
+    # anchorLineNos: true
+    # codeFences: true
+    # guessSyntax: true
+    # lineNos: true
+    # style: monokai
