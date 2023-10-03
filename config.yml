@@ -58,11 +58,13 @@ params:
   # home-info mode
   homeInfoParams:
     Title: "Hi, I'm Sunghyun Jun \U0001F44B"
-    Content: Develop services using machine learning for speech and language.
+    Content: Software Engineer, focused on inference optimization using PyTorch
 
   socialIcons:
     - name: email
       url: "mailto:sunghyunjun1224@gmail.com"
+    - name: linkedin
+      url: "https://www.linkedin.com/in/sunghyun-jun-0a2156278"
     - name: github
       url: "https://github.com/sunghyunjun"
     - name: kaggle
