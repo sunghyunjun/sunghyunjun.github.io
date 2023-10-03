@@ -5,25 +5,6 @@
     <link>https://sunghyunjun.github.io/tags/</link>
     <description>Recent content in Tags on Sunghyun Jun Dev Note</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>ko-kr</language>
-    <lastBuildDate>Sun, 03 Apr 2022 22:00:00 +0900</lastBuildDate><atom:link href="https://sunghyunjun.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>cgo</title>
-      <link>https://sunghyunjun.github.io/tags/cgo/</link>
-      <pubDate>Sun, 03 Apr 2022 22:00:00 +0900</pubDate>
-      
-      <guid>https://sunghyunjun.github.io/tags/cgo/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>docker-compose</title>
-      <link>https://sunghyunjun.github.io/tags/docker-compose/</link>
-      <pubDate>Sat, 26 Mar 2022 09:00:00 +0900</pubDate>
-      
-      <guid>https://sunghyunjun.github.io/tags/docker-compose/</guid>
-      <description></description>
-    </item>
-    
+    <language>ko-kr</language><atom:link href="https://sunghyunjun.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

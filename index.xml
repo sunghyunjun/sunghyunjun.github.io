@@ -5,34 +5,6 @@
     <link>https://sunghyunjun.github.io/</link>
     <description>Recent content on Sunghyun Jun Dev Note</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>ko-kr</language>
-    <lastBuildDate>Sun, 03 Apr 2022 22:00:00 +0900</lastBuildDate><atom:link href="https://sunghyunjun.github.io/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Shared Library Path 이해와 cgo 사용하기</title>
-      <link>https://sunghyunjun.github.io/posts/shared-library-path-with-cgo/</link>
-      <pubDate>Sun, 03 Apr 2022 22:00:00 +0900</pubDate>
-      
-      <guid>https://sunghyunjun.github.io/posts/shared-library-path-with-cgo/</guid>
-      <description>Shared Library를 cgo와 함께 사용하는데 있어 도움이 되는 정보를 기록합니다.
-LD_LIBRARY_PATH LD_LIBRARY_PATH는 각종 library를 사용할 때 참조 path 문제를 해결하고자 사용하곤 합니다.
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/path/to/shared/lib 위와 같은 식으로 사용이 가능합니다. 하지만 LD_LIBRARY_PATH 쉘 환경변수 설정은 디버깅, 개발 시에만 제한적으로 사용되는 것이 바람직합니다.
-Why LD_LIBRARY_PATH is Bad 위의 주제로 구글링을 해보면 많은 글들을 찾아볼 수 있습니다. 그 중 일부를 살펴보면 아래와 같습니다.
-Why LD_LIBRARY_PATH is bad
-When should I set LD_LIBRARY_PATH?
-LD_LIBRARY_PATH is used in preference to any run time or default system linker path.</description>
-    </item>
-    
-    <item>
-      <title>Docker Compose Networks 이름 설정하기</title>
-      <link>https://sunghyunjun.github.io/posts/docker-compose-networks-name/</link>
-      <pubDate>Sat, 26 Mar 2022 09:00:00 +0900</pubDate>
-      
-      <guid>https://sunghyunjun.github.io/posts/docker-compose-networks-name/</guid>
-      <description>Docker Compose networks 설정을 했을 때, docker network ls를 하여 network name을 확인해보면 특정 형태의 접두사가 포함되곤 합니다.
-이 글에서는 network name 접두사가 어떻게 생성되는지 확인해보고, 접두사 없이 network name을 내가 원하는 name으로 설정할 수 있는 지를 알아보려고 합니다.
-docker-compose-without-networks-name.yml
-version: &amp;#39;3.9&amp;#39; services: hello-world: image: &amp;#34;hello-world:latest&amp;#34; networks: - foobar # without name property networks: foobar: driver: bridge amiere@LAPTOP-5BV4FPUC:~/mydir$ docker-compose -f ./docker-compose-without-networks-name.yml up [+] Running 2/2 ⠿ Network mydir_foobar Created 0.1s ⠿ Container mydir-hello-world-1 Created 0.</description>
-    </item>
-    
+    <language>ko-kr</language><atom:link href="https://sunghyunjun.github.io/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
