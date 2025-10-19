@@ -4,7 +4,23 @@
     <title>Tags on Sunghyun Jun Dev Note</title>
     <link>https://sunghyunjun.github.io/tags/</link>
     <description>Recent content in Tags on Sunghyun Jun Dev Note</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>ko-kr</language><atom:link href="https://sunghyunjun.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo -- 0.151.2</generator>
+    <language>ko-kr</language>
+    <lastBuildDate>Sun, 19 Oct 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://sunghyunjun.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Inference</title>
+      <link>https://sunghyunjun.github.io/tags/inference/</link>
+      <pubDate>Sun, 19 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>https://sunghyunjun.github.io/tags/inference/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Optimization</title>
+      <link>https://sunghyunjun.github.io/tags/optimization/</link>
+      <pubDate>Sun, 19 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>https://sunghyunjun.github.io/tags/optimization/</guid>
+      <description></description>
+    </item>
   </channel>
 </rss>

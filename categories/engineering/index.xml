@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Sunghyun Jun Dev Note</title>
-    <link>https://sunghyunjun.github.io/</link>
-    <description>Recent content on Sunghyun Jun Dev Note</description>
+    <title>Engineering on Sunghyun Jun Dev Note</title>
+    <link>https://sunghyunjun.github.io/categories/engineering/</link>
+    <description>Recent content in Engineering on Sunghyun Jun Dev Note</description>
     <generator>Hugo -- 0.151.2</generator>
     <language>ko-kr</language>
     <lastBuildDate>Sun, 19 Oct 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://sunghyunjun.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://sunghyunjun.github.io/categories/engineering/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>추론 최적화, 어떻게 접근할 것인가</title>
       <link>https://sunghyunjun.github.io/posts/2025-10-19-inference-optimization/</link>

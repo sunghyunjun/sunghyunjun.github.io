@@ -4,7 +4,16 @@
     <title>Categories on Sunghyun Jun Dev Note</title>
     <link>https://sunghyunjun.github.io/categories/</link>
     <description>Recent content in Categories on Sunghyun Jun Dev Note</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>ko-kr</language><atom:link href="https://sunghyunjun.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo -- 0.151.2</generator>
+    <language>ko-kr</language>
+    <lastBuildDate>Sun, 19 Oct 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://sunghyunjun.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Engineering</title>
+      <link>https://sunghyunjun.github.io/categories/engineering/</link>
+      <pubDate>Sun, 19 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>https://sunghyunjun.github.io/categories/engineering/</guid>
+      <description></description>
+    </item>
   </channel>
 </rss>
