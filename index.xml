@@ -4,27 +4,35 @@
     <title>Sunghyun Jun Dev Note</title>
     <link>https://sunghyunjun.github.io/</link>
     <description>Recent content on Sunghyun Jun Dev Note</description>
-    <generator>Hugo -- 0.151.2</generator>
+    <generator>Hugo -- 0.160.1</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Sun, 19 Oct 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 30 Mar 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://sunghyunjun.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>추론 최적화, 어떻게 접근할 것인가</title>
+      <title>The Shift in GPU Optimization: From Threads to Tiles</title>
+      <link>https://sunghyunjun.github.io/posts/2026-03-30-gpu-optimization-thread-to-tile/</link>
+      <pubDate>Mon, 30 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://sunghyunjun.github.io/posts/2026-03-30-gpu-optimization-thread-to-tile/</guid>
+      <description>&lt;h3 id=&#34;1-introduction-the-fatigue-of-model-surgery&#34;&gt;1. Introduction: The Fatigue of Model Surgery&lt;/h3&gt;
+&lt;p&gt;In current practice, the most common task for ensuring inference performance when using ONNX Runtime or TensorRT &lt;a href=&#34;https://developer.nvidia.com/tensorrt&#34;&gt;[1]&lt;/a&gt; is &amp;lsquo;Model Rewriting.&amp;rsquo; This involves replacing operations not supported by inference engines like TensorRT or applying mathematical masking to remove &lt;code&gt;if&lt;/code&gt; branches that cause Graph Breaks in TorchDynamo &lt;a href=&#34;https://pytorch.org/get-started/pytorch-2.0/&#34;&gt;[2]&lt;/a&gt;. Such tasks can be described as manual interventions by engineers to force a static computation graph and improve compiler optimization efficiency.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Inference Optimization: How to Approach It</title>
       <link>https://sunghyunjun.github.io/posts/2025-10-19-inference-optimization/</link>
       <pubDate>Sun, 19 Oct 2025 00:00:00 +0000</pubDate>
       <guid>https://sunghyunjun.github.io/posts/2025-10-19-inference-optimization/</guid>
-      <description>&lt;p&gt;추론 최적화(Inference Optimization)를 이해하고 최신 트렌드를 놓치지 않는 것은 매우 중요합니다. 하지만 그보다 더 중요한 것은 어떤 기술이 현재의 상황에 가장 적합한가를 판단하는 일이라고 생각합니다.&lt;/p&gt;
-&lt;h2 id=&#34;추론-최적화의-기본-요소들&#34;&gt;추론 최적화의 기본 요소들&lt;/h2&gt;
-&lt;p&gt;추론 최적화에는 다양한 접근 방식이 존재합니다.&lt;/p&gt;
-&lt;p&gt;대표적으로 다음과 같은 개념들이 있습니다.&lt;/p&gt;
+      <description>&lt;p&gt;Understanding inference optimization and keeping up with the latest trends is very important. However, I believe what is even more critical is the ability to determine which technology is most suitable for a given situation.&lt;/p&gt;
+&lt;h2 id=&#34;basic-elements-of-inference-optimization&#34;&gt;Basic Elements of Inference Optimization&lt;/h2&gt;
+&lt;p&gt;Various approaches exist in the field of inference optimization.&lt;/p&gt;
+&lt;p&gt;Representative concepts include:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Compute bound / Memory bound 분석&lt;/li&gt;
-&lt;li&gt;Precision 조정 (FP16, BF16, INT8 등)&lt;/li&gt;
-&lt;li&gt;Kernel fusion &amp;amp; Compiler 최적화&lt;/li&gt;
-&lt;li&gt;Quantization / Sparsity 적용 전략&lt;/li&gt;
-&lt;li&gt;Flash Attention, Speculative Decoding 등&lt;/li&gt;
+&lt;li&gt;Compute-bound / Memory-bound analysis&lt;/li&gt;
+&lt;li&gt;Precision adjustment (FP16, BF16, INT8, etc.)&lt;/li&gt;
+&lt;li&gt;Kernel fusion &amp;amp; Compiler optimization&lt;/li&gt;
+&lt;li&gt;Quantization / Sparsity application strategies&lt;/li&gt;
+&lt;li&gt;Flash Attention, Speculative Decoding, etc.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;이러한 개념들은 일종의 &amp;lsquo;기본 재료&amp;rsquo;로서, 연구자들과 엔지니어들은 이를 바탕으로 계속해서 한계까지 확장해 나가고 있습니다. 그러나 기술적인 깊이에만 집중하다 보면, 종종 &amp;ldquo;&lt;strong&gt;무엇을 위해 최적화하고 있는가?&lt;/strong&gt;&amp;ldquo;라는 근본적인 질문을 놓치게 됩니다.&lt;/p&gt;</description>
+&lt;p&gt;These concepts serve as &amp;lsquo;basic ingredients,&amp;rsquo; and researchers and engineers continue to push them to their limits. However, focusing solely on technical depth often leads to missing the fundamental question: &amp;ldquo;&lt;strong&gt;What are we optimizing for?&lt;/strong&gt;&amp;rdquo;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

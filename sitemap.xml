@@ -3,24 +3,36 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://sunghyunjun.github.io/categories/</loc>
-    <lastmod>2025-10-19T00:00:00+00:00</lastmod>
+    <lastmod>2026-03-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://sunghyunjun.github.io/tags/compiler/</loc>
+    <lastmod>2026-03-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://sunghyunjun.github.io/categories/engineering/</loc>
-    <lastmod>2025-10-19T00:00:00+00:00</lastmod>
+    <lastmod>2026-03-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://sunghyunjun.github.io/tags/inference/</loc>
-    <lastmod>2025-10-19T00:00:00+00:00</lastmod>
+    <loc>https://sunghyunjun.github.io/tags/gpu/</loc>
+    <lastmod>2026-03-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://sunghyunjun.github.io/tags/mlir/</loc>
+    <lastmod>2026-03-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://sunghyunjun.github.io/tags/optimization/</loc>
-    <lastmod>2025-10-19T00:00:00+00:00</lastmod>
+    <lastmod>2026-03-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://sunghyunjun.github.io/posts/</loc>
-    <lastmod>2025-10-19T00:00:00+00:00</lastmod>
+    <lastmod>2026-03-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://sunghyunjun.github.io/</loc>
-    <lastmod>2025-10-19T00:00:00+00:00</lastmod>
+    <lastmod>2026-03-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://sunghyunjun.github.io/tags/</loc>
+    <lastmod>2026-03-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://sunghyunjun.github.io/posts/2026-03-30-gpu-optimization-thread-to-tile/</loc>
+    <lastmod>2026-03-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://sunghyunjun.github.io/tags/inference/</loc>
     <lastmod>2025-10-19T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://sunghyunjun.github.io/posts/2025-10-19-inference-optimization/</loc>
