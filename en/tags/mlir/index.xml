@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>MLIR on Sunghyun Jun Dev Note (EN)</title>
+    <link>https://sunghyunjun.github.io/en/tags/mlir/</link>
+    <description>Recent content in MLIR on Sunghyun Jun Dev Note (EN)</description>
+    <generator>Hugo -- 0.160.1</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 30 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://sunghyunjun.github.io/en/tags/mlir/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Shift in GPU Optimization: From Threads to Tiles</title>
+      <link>https://sunghyunjun.github.io/en/posts/2026-03-30-gpu-optimization-thread-to-tile/</link>
+      <pubDate>Mon, 30 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://sunghyunjun.github.io/en/posts/2026-03-30-gpu-optimization-thread-to-tile/</guid>
+      <description>&lt;h3 id=&#34;1-introduction-the-fatigue-of-model-surgery&#34;&gt;1. Introduction: The Fatigue of Model Surgery&lt;/h3&gt;
+&lt;p&gt;In current practice, the most common task for ensuring inference performance when using ONNX Runtime or TensorRT &lt;a href=&#34;https://developer.nvidia.com/tensorrt&#34;&gt;[1]&lt;/a&gt; is &amp;lsquo;Model Rewriting.&amp;rsquo; This involves replacing operations not supported by inference engines like TensorRT or applying mathematical masking to remove &lt;code&gt;if&lt;/code&gt; branches that cause Graph Breaks in TorchDynamo &lt;a href=&#34;https://pytorch.org/get-started/pytorch-2.0/&#34;&gt;[2]&lt;/a&gt;. Such tasks can be described as manual interventions by engineers to force a static computation graph and improve compiler optimization efficiency.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

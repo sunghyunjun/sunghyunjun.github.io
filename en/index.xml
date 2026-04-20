@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Sunghyun Jun Dev Note (EN)</title>
+    <link>https://sunghyunjun.github.io/en/</link>
+    <description>Recent content on Sunghyun Jun Dev Note (EN)</description>
+    <generator>Hugo -- 0.160.1</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 30 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://sunghyunjun.github.io/en/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Shift in GPU Optimization: From Threads to Tiles</title>
+      <link>https://sunghyunjun.github.io/en/posts/2026-03-30-gpu-optimization-thread-to-tile/</link>
+      <pubDate>Mon, 30 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://sunghyunjun.github.io/en/posts/2026-03-30-gpu-optimization-thread-to-tile/</guid>
+      <description>&lt;h3 id=&#34;1-introduction-the-fatigue-of-model-surgery&#34;&gt;1. Introduction: The Fatigue of Model Surgery&lt;/h3&gt;
+&lt;p&gt;In current practice, the most common task for ensuring inference performance when using ONNX Runtime or TensorRT &lt;a href=&#34;https://developer.nvidia.com/tensorrt&#34;&gt;[1]&lt;/a&gt; is &amp;lsquo;Model Rewriting.&amp;rsquo; This involves replacing operations not supported by inference engines like TensorRT or applying mathematical masking to remove &lt;code&gt;if&lt;/code&gt; branches that cause Graph Breaks in TorchDynamo &lt;a href=&#34;https://pytorch.org/get-started/pytorch-2.0/&#34;&gt;[2]&lt;/a&gt;. Such tasks can be described as manual interventions by engineers to force a static computation graph and improve compiler optimization efficiency.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Inference Optimization: How to Approach It</title>
+      <link>https://sunghyunjun.github.io/en/posts/2025-10-19-inference-optimization/</link>
+      <pubDate>Sun, 19 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>https://sunghyunjun.github.io/en/posts/2025-10-19-inference-optimization/</guid>
+      <description>&lt;p&gt;Understanding inference optimization and keeping up with the latest trends is very important. However, I believe what is even more critical is the ability to determine which technology is most suitable for a given situation.&lt;/p&gt;
+&lt;h2 id=&#34;basic-elements-of-inference-optimization&#34;&gt;Basic Elements of Inference Optimization&lt;/h2&gt;
+&lt;p&gt;Various approaches exist in the field of inference optimization.&lt;/p&gt;
+&lt;p&gt;Representative concepts include:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Compute-bound / Memory-bound analysis&lt;/li&gt;
+&lt;li&gt;Precision adjustment (FP16, BF16, INT8, etc.)&lt;/li&gt;
+&lt;li&gt;Kernel fusion &amp;amp; Compiler optimization&lt;/li&gt;
+&lt;li&gt;Quantization / Sparsity application strategies&lt;/li&gt;
+&lt;li&gt;Flash Attention, Speculative Decoding, etc.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;These concepts serve as &amp;lsquo;basic ingredients,&amp;rsquo; and researchers and engineers continue to push them to their limits. However, focusing solely on technical depth often leads to missing the fundamental question: &amp;ldquo;&lt;strong&gt;What are we optimizing for?&lt;/strong&gt;&amp;rdquo;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
