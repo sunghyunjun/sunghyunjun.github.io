@@ -15,14 +15,14 @@ draft: false
 ### 3. 최적화 단위의 전이: Triton과 CUTLASS CuTe
 최적화의 패러다임은 이미 개별 스레드(Thread) 제어에서 블록(Block) 및 타일(Tile) 단위의 추상화로 이동하고 있습니다.
 
-*   **Triton** [[3]](https://github.com/triton-lang/triton): 루프 분석의 복잡성을 피하기 위해 사용자에게 처음부터 블록 단위 코딩을 제안합니다. 내부적으로는 정수 분석(Integer Analysis) 및 기호적 최적화 패스를 통해 GPU 하드웨어 제약(뱅크 컨플릭트 등)에 맞는 인덱싱을 자동 생성합니다. 이는 과거 폴리헤드럴(Polyhedral) 컴파일러가 지향했던 루프 최적화의 이점을 현대적인 타일 기반 아키텍처로 가져온 결과입니다.
-*   **CUTLASS CuTe** [[4]](https://github.com/NVIDIA/cutlass/blob/main/media/docs/cute/00_quick_start.md): CUTLASS 3.0부터 도입된 **CuTe**는 데이터의 '레이아웃(Layout)'과 '타일(Tile)'을 수학적으로 추상화합니다. 스레드 계층 구조(Hierarchy)에 종속된 수동 인덱싱 대신, 데이터의 형태(Shape)와 스트라이드(Stride)를 하드웨어의 계층적 자원에 매핑하는 **Composability**에 집중합니다. 이를 통해 엔지니어는 복잡한 하드웨어 명령어(TMA, WGMMA 등)를 직접 다루지 않고도 고성능 커널을 설계할 수 있는 기반을 얻습니다.
+*   **Triton** [[3]](https://github.com/triton-lang/triton): 루프 분석의 복잡성을 피하기 위해 사용자에게 처음부터 블록 단위 코딩을 제안합니다. 개별 스레드 레벨의 인덱싱 대신 블록 단위의 연산을 직접 기술하게 함으로써, GPU 메모리 접근 패턴 최적화를 컴파일러에 위임하는 구조입니다.
+*   **CUTLASS CuTe** [[4]](https://github.com/NVIDIA/cutlass/blob/main/media/docs/cute/00_quick_start.md): CUTLASS 3.0부터 도입된 **CuTe**는 데이터의 레이아웃(Layout)과 타일(Tile)을 수학적으로 추상화합니다. 스레드 계층 구조에 종속된 수동 인덱싱 대신, 데이터의 형태(Shape)와 스트라이드(Stride)를 하드웨어의 계층적 자원에 매핑하는 **Composability**에 집중합니다. 이를 통해 동일한 알고리즘을 다양한 메모리 레이아웃에 이식할 수 있는 추상화 기반을 제공하는 방향입니다.
 
 ### 4. 차세대 추상화: JAX Pallas, Tunix, 그리고 CUDA Tile
 최근 논의되는 기술들은 이러한 타일 단위 최적화를 더 높은 수준의 컴파일러 스택으로 끌어올리려는 움직임을 보여줍니다.
 
-*   **JAX Pallas** [[5]](https://jax.readthedocs.io/en/latest/pallas/index.html) & **Tunix** [[6]](https://github.com/google/tunix): 구글은 Pallas를 통해 '타일' 중심의 통합 커널 언어를 제공함과 동시에, 그 배후에서 **Tunix**와 같은 MLIR [[7]](https://mlir.llvm.org/) 기반의 새로운 컴파일러 인프라를 구축하고 있습니다. Tunix는 TPU와 GPU 모두를 타겟으로 하며, MLIR 다이얼렉트(Dialect)를 활용해 하드웨어 특성에 맞는 타일링과 마이크로 커널 생성을 자동화하려 시도합니다. 
-*   **CUDA Tile (Tile IR)** [[8]](https://github.com/NVIDIA/cuda-tile): 엔비디아가 공개한 새로운 프로그래밍 모델로, 기존의 스레드 중심(SIMT) 모델에서 벗어나 **'타일'을 연산의 기본 단위(Primitive)**로 격상시켰습니다. **Tile IR**이라 불리는 MLIR 다이얼렉트를 통해 하드웨어의 메모리 계층과 텐서 코어 사양을 추상화하며, 엔지니어가 직접 모델을 리라이팅하는 대신 컴파일러가 Blackwell [[9]](https://www.nvidia.com/en-us/data-center/blackwell/) 등의 차세대 하드웨어 스펙에 맞춰 최적의 타일 레이아웃과 데이터 흐름을 생성하는 구조를 지향하고 있습니다.
+*   **JAX Pallas** [[5]](https://jax.readthedocs.io/en/latest/pallas/index.html) & **Tunix** [[6]](https://github.com/google/tunix): 구글은 Pallas를 통해 타일 중심의 통합 커널 언어를 제공함과 동시에, 그 배후에서 **Tunix**와 같은 MLIR [[7]](https://mlir.llvm.org/) 기반의 컴파일러 인프라를 구축하고 있습니다. TPU와 GPU를 모두 타겟으로 하여, 하드웨어 종속적인 최적화 결정을 컴파일러 레벨로 올려내려는 흐름으로 보입니다. 
+*   **CUDA Tile (Tile IR)** [[8]](https://github.com/NVIDIA/cuda-tile): 엔비디아가 공개한 새로운 프로그래밍 모델로, 기존의 스레드 중심(SIMT) 모델에서 벗어나 **타일을 연산의 기본 단위(Primitive)**로 격상시키는 방향입니다. 엔지니어가 직접 모델을 리라이팅하는 대신, 컴파일러가 Blackwell [[9]](https://www.nvidia.com/en-us/data-center/blackwell/) 과 같은 차세대 하드웨어 스펙에 맞춰 최적의 타일 구성을 결정하는 구조를 지향하는 것으로 보입니다.
 
 ### 5. 결론: '오토-최적화' 시대, 엔지니어의 스탠스에 대한 제언
 `torch.compile`과 같은 기술이 안착하고 코딩 에이전트(Claude Code, Gemini 등)가 최적화 패턴을 학습하여 커널을 생성하는 시대가 오면, 엔지니어링의 역할은 다음과 같이 변모할 것으로 조심스럽게 예측해 봅니다.
