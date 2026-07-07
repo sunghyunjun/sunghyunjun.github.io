@@ -6,6 +6,7 @@ ignoreFiles: blog-example
 
 DefaultContentLanguage: ko
 enableRobotsTXT: true
+enableGitInfo: true
 buildDrafts: false
 buildFuture: false
 buildExpired: false
