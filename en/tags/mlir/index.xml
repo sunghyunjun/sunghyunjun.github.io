@@ -4,9 +4,9 @@
     <title>MLIR on Sunghyun Jun Dev Note (EN)</title>
     <link>https://sunghyunjun.github.io/en/tags/mlir/</link>
     <description>Recent content in MLIR on Sunghyun Jun Dev Note (EN)</description>
-    <generator>Hugo -- 0.161.1</generator>
+    <generator>Hugo -- 0.164.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 30 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 11 May 2026 00:52:08 +0900</lastBuildDate>
     <atom:link href="https://sunghyunjun.github.io/en/tags/mlir/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The Shift in GPU Optimization: From Threads to Tiles</title>
