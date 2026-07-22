@@ -1,0 +1,103 @@
+/* Inline SVG diagrams for posts. Loaded via {{< svg >}} shortcode as page-bundle
+   resources, so the <svg> markup lives in the page DOM and can read the theme's
+   own CSS custom properties (theme-vars.css) -- meaning it repaints automatically
+   for both `prefers-color-scheme` and PaperMod's manual `body.dark` toggle,
+   with no separate light/dark SVG files to keep in sync. */
+
+.post-svg {
+  margin: 2rem 0;
+  padding: 1.1rem 1.2rem 0.9rem;
+  background: var(--entry);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow-x: auto;
+}
+
+.post-svg svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+}
+
+.post-svg figcaption {
+  margin-top: 0.6rem;
+  padding-top: 0.6rem;
+  border-top: 1px dashed var(--border);
+  font-size: 0.82rem;
+  line-height: 1.5;
+  color: var(--secondary);
+  text-align: left;
+}
+
+/* Semantic node/text classes shared by all diagrams -- neutral chrome maps to
+   the theme's own vars, categorical accents get explicit light/dark pairs
+   chosen for AA contrast against both var(--entry) backgrounds. */
+.post-svg text { font-family: -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
+  "Apple SD Gothic Neo", "Noto Sans KR", sans-serif; }
+
+.post-svg .lbl { fill: var(--primary); }
+.post-svg .lbl-sub { fill: var(--secondary); }
+.post-svg .lbl-inv { fill: #ffffff; }
+.post-svg .edge { stroke: var(--tertiary); }
+.post-svg .edge-dash { stroke: var(--tertiary); stroke-dasharray: 4 3; }
+.post-svg .box-neutral { fill: var(--code-bg); stroke: var(--border); }
+.post-svg .box-panel { fill: var(--theme); stroke: var(--border); }
+
+/* categorical accents */
+.post-svg .n-blue    { fill: #4c8bf5; }
+.post-svg .n-teal     { fill: #0b8c8c; }
+.post-svg .n-purple  { fill: #8562e3; }
+.post-svg .n-amber   { fill: #c8930b; }
+.post-svg .n-green   { fill: #2f9e44; }
+.post-svg .n-red     { fill: #d9480f; }
+.post-svg .n-gray    { fill: #8a8f98; }
+
+.post-svg .s-blue    { stroke: #4c8bf5; }
+.post-svg .s-teal     { stroke: #0b8c8c; }
+.post-svg .s-purple  { stroke: #8562e3; }
+.post-svg .s-amber   { stroke: #c8930b; }
+.post-svg .s-green   { stroke: #2f9e44; }
+.post-svg .s-red     { stroke: #d9480f; }
+.post-svg .s-gray    { stroke: #8a8f98; }
+
+body.dark .post-svg .n-blue    { fill: #6d9fff; }
+body.dark .post-svg .n-teal     { fill: #2bb3b3; }
+body.dark .post-svg .n-purple  { fill: #a68af0; }
+body.dark .post-svg .n-amber   { fill: #e0ac2b; }
+body.dark .post-svg .n-green   { fill: #4fc26b; }
+body.dark .post-svg .n-red     { fill: #ef7d4f; }
+body.dark .post-svg .n-gray    { fill: #9aa0aa; }
+
+body.dark .post-svg .s-blue    { stroke: #6d9fff; }
+body.dark .post-svg .s-teal     { stroke: #2bb3b3; }
+body.dark .post-svg .s-purple  { stroke: #a68af0; }
+body.dark .post-svg .s-amber   { stroke: #e0ac2b; }
+body.dark .post-svg .s-green   { stroke: #4fc26b; }
+body.dark .post-svg .s-red     { stroke: #ef7d4f; }
+body.dark .post-svg .s-gray    { stroke: #9aa0aa; }
+
+/* soft tint backgrounds for grouped boxes -- readable on both themes at low opacity */
+.post-svg .t-blue   { fill: #4c8bf5; fill-opacity: .12; }
+.post-svg .t-teal    { fill: #0b8c8c; fill-opacity: .12; }
+.post-svg .t-purple { fill: #8562e3; fill-opacity: .12; }
+.post-svg .t-amber  { fill: #c8930b; fill-opacity: .14; }
+.post-svg .t-green  { fill: #2f9e44; fill-opacity: .13; }
+.post-svg .t-red    { fill: #d9480f; fill-opacity: .12; }
+body.dark .post-svg .t-blue   { fill: #6d9fff; fill-opacity: .16; }
+body.dark .post-svg .t-teal    { fill: #2bb3b3; fill-opacity: .16; }
+body.dark .post-svg .t-purple { fill: #a68af0; fill-opacity: .16; }
+body.dark .post-svg .t-amber  { fill: #e0ac2b; fill-opacity: .18; }
+body.dark .post-svg .t-green  { fill: #4fc26b; fill-opacity: .16; }
+body.dark .post-svg .t-red    { fill: #ef7d4f; fill-opacity: .16; }
+
+/* matrix status icons (section 6): filled circle + glyph, not color alone,
+   so status reads even for colorblind viewers or at a glance */
+.post-svg .st-yes  { fill: #2f9e44; }
+.post-svg .st-mid  { fill: #c8930b; }
+.post-svg .st-no   { fill: var(--secondary); }
+.post-svg .st-na   { fill: none; stroke: var(--tertiary); stroke-width: 1.4; stroke-dasharray: 2.5 2.5; }
+.post-svg .st-glyph { fill: #ffffff; font-weight: 800; }
+.post-svg .st-glyph-na { fill: var(--secondary); font-weight: 800; }
+body.dark .post-svg .st-yes { fill: #4fc26b; }
+body.dark .post-svg .st-mid { fill: #e0ac2b; }

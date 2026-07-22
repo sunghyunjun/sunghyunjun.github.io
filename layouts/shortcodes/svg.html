@@ -1,0 +1,12 @@
+{{- $name := .Get "name" -}}
+{{- $caption := .Get "caption" -}}
+{{- with .Page.Resources.GetMatch $name -}}
+<figure class="post-svg">
+{{ .Content | safeHTML }}
+{{- with $caption }}
+<figcaption>{{ . }}</figcaption>
+{{- end }}
+</figure>
+{{- else -}}
+{{- errorf "svg shortcode: resource %q not found on page %q" $name $.Page.File.Path -}}
+{{- end -}}

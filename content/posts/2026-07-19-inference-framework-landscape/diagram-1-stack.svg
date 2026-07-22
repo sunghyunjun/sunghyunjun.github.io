@@ -1,0 +1,50 @@
+<svg viewBox="0 0 720 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="추론 최적화 도구를 범용 그래프 컴파일러, LLM 전용 서빙 엔진, 모바일·엣지 런타임 세 갈래로 나누고, 그 아래 공통 하드웨어 기반을 두는 구도">
+  <defs>
+    <marker id="arrow1" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" class="n-gray"/>
+    </marker>
+  </defs>
+
+  <!-- top: model/framework -->
+  <rect x="220" y="14" width="280" height="46" rx="10" class="box-panel s-gray" stroke-width="1.5"/>
+  <text x="360" y="42" text-anchor="middle" class="lbl" font-size="13.5" font-weight="700">모델 / 프레임워크</text>
+
+  <path d="M290 60 L150 92" class="edge" fill="none" stroke-width="1.4" marker-end="url(#arrow1)"/>
+  <path d="M360 60 L360 92" class="edge" fill="none" stroke-width="1.4" marker-end="url(#arrow1)"/>
+  <path d="M430 60 L590 92" class="edge" fill="none" stroke-width="1.4" marker-end="url(#arrow1)"/>
+
+  <!-- three lanes -->
+  <rect x="20" y="96" width="220" height="130" rx="10" class="t-teal s-teal" stroke-width="1.5"/>
+  <text x="130" y="120" text-anchor="middle" class="lbl n-teal" font-size="12.5" font-weight="700">범용 그래프 컴파일러·런타임</text>
+  <text x="130" y="138" text-anchor="middle" class="lbl-sub" font-size="10">그래프를 컴파일해 반복 호출</text>
+  <text x="130" y="170" text-anchor="middle" class="lbl-sub" font-size="10">ONNX Runtime · TensorRT</text>
+  <text x="130" y="186" text-anchor="middle" class="lbl-sub" font-size="10">OpenVINO · TVM · IREE</text>
+  <text x="130" y="210" text-anchor="middle" class="lbl-sub" font-size="10.5">→ 2절</text>
+
+  <rect x="250" y="96" width="220" height="130" rx="10" class="t-amber s-amber" stroke-width="1.5"/>
+  <text x="360" y="120" text-anchor="middle" class="lbl n-amber" font-size="12.5" font-weight="700">LLM 전용 서빙 엔진</text>
+  <text x="360" y="138" text-anchor="middle" class="lbl-sub" font-size="10">autoregressive decoding +</text>
+  <text x="360" y="152" text-anchor="middle" class="lbl-sub" font-size="10">continuous batching</text>
+  <text x="360" y="172" text-anchor="middle" class="lbl-sub" font-size="10">vLLM · SGLang</text>
+  <text x="360" y="188" text-anchor="middle" class="lbl-sub" font-size="10">TensorRT-LLM · llama.cpp</text>
+  <text x="360" y="210" text-anchor="middle" class="lbl-sub" font-size="10.5">→ 3절</text>
+
+  <rect x="480" y="96" width="220" height="130" rx="10" class="t-green s-green" stroke-width="1.5"/>
+  <text x="590" y="120" text-anchor="middle" class="lbl n-green" font-size="12.5" font-weight="700">모바일·엣지 특화 런타임</text>
+  <text x="590" y="138" text-anchor="middle" class="lbl-sub" font-size="10">온디바이스 배포에 최적화</text>
+  <text x="590" y="170" text-anchor="middle" class="lbl-sub" font-size="10">ExecuTorch · Core ML</text>
+  <text x="590" y="186" text-anchor="middle" class="lbl-sub" font-size="10">LiteRT · MNN</text>
+  <text x="590" y="210" text-anchor="middle" class="lbl-sub" font-size="10.5">→ 5절</text>
+
+  <!-- converge into one shared hardware band -->
+  <path d="M130 226 L130 250" class="edge" stroke-width="1.4" marker-end="url(#arrow1)"/>
+  <path d="M360 226 L360 250" class="edge" stroke-width="1.4" marker-end="url(#arrow1)"/>
+  <path d="M590 226 L590 250" class="edge" stroke-width="1.4" marker-end="url(#arrow1)"/>
+
+  <rect x="20" y="254" width="680" height="62" rx="10" class="box-neutral" stroke-width="1.3"/>
+  <text x="360" y="276" text-anchor="middle" class="lbl-sub" font-size="10.5">공통 하드웨어 기반 (세 갈래 모두가 원칙적으로 걸칠 수 있는 대상)</text>
+  <text x="360" y="298" text-anchor="middle" class="lbl" font-size="11.5">NVIDIA GPU · AMD ROCm · Apple Silicon · 범용 CPU · 모바일·엣지 실리콘</text>
+
+  <text x="360" y="344" text-anchor="middle" class="lbl-sub" font-size="11.5" font-style="italic">PyTorch 자체의 배포 경로(4절)와 벤더 특화 세부 사항(5절)은</text>
+  <text x="360" y="364" text-anchor="middle" class="lbl-sub" font-size="11.5" font-style="italic">이 세 갈래를 가로지르는 별도의 관점이다.</text>
+</svg>
