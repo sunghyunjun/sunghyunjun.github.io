@@ -6,13 +6,41 @@
     <description>Recent content in Tags on Sunghyun Jun Dev Note (EN)</description>
     <generator>Hugo -- 0.164.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 11 May 2026 00:52:08 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 23 Jul 2026 02:09:23 +0900</lastBuildDate>
     <atom:link href="https://sunghyunjun.github.io/en/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Compiler</title>
       <link>https://sunghyunjun.github.io/en/tags/compiler/</link>
-      <pubDate>Mon, 30 Mar 2026 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 19 Jul 2026 00:00:00 +0000</pubDate>
       <guid>https://sunghyunjun.github.io/en/tags/compiler/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Inference</title>
+      <link>https://sunghyunjun.github.io/en/tags/inference/</link>
+      <pubDate>Sun, 19 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>https://sunghyunjun.github.io/en/tags/inference/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>LLM</title>
+      <link>https://sunghyunjun.github.io/en/tags/llm/</link>
+      <pubDate>Sun, 19 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>https://sunghyunjun.github.io/en/tags/llm/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Optimization</title>
+      <link>https://sunghyunjun.github.io/en/tags/optimization/</link>
+      <pubDate>Sun, 19 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>https://sunghyunjun.github.io/en/tags/optimization/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>PyTorch</title>
+      <link>https://sunghyunjun.github.io/en/tags/pytorch/</link>
+      <pubDate>Sun, 19 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>https://sunghyunjun.github.io/en/tags/pytorch/</guid>
       <description></description>
     </item>
     <item>
@@ -27,20 +55,6 @@
       <link>https://sunghyunjun.github.io/en/tags/mlir/</link>
       <pubDate>Mon, 30 Mar 2026 00:00:00 +0000</pubDate>
       <guid>https://sunghyunjun.github.io/en/tags/mlir/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Optimization</title>
-      <link>https://sunghyunjun.github.io/en/tags/optimization/</link>
-      <pubDate>Mon, 30 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://sunghyunjun.github.io/en/tags/optimization/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Inference</title>
-      <link>https://sunghyunjun.github.io/en/tags/inference/</link>
-      <pubDate>Sun, 19 Oct 2025 00:00:00 +0000</pubDate>
-      <guid>https://sunghyunjun.github.io/en/tags/inference/</guid>
       <description></description>
     </item>
   </channel>

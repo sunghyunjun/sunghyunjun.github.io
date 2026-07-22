@@ -6,8 +6,17 @@
     <description>Recent content in Compiler on Sunghyun Jun Dev Note</description>
     <generator>Hugo -- 0.164.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Mon, 11 May 2026 00:52:08 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 23 Jul 2026 02:09:23 +0900</lastBuildDate>
     <atom:link href="https://sunghyunjun.github.io/tags/compiler/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>추론 최적화, 무엇을 선택할 것인가</title>
+      <link>https://sunghyunjun.github.io/posts/2026-07-19-inference-framework-landscape/</link>
+      <pubDate>Sun, 19 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>https://sunghyunjun.github.io/posts/2026-07-19-inference-framework-landscape/</guid>
+      <description>&lt;h3 id=&#34;1-추론-최적화-기술-개요&#34;&gt;1. 추론 최적화 기술 개요&lt;/h3&gt;
+&lt;p&gt;모델을 프로덕션 서비스로 운영하려면 추론 최적화 단계를 거치게 됩니다. 검증된 프레임워크나 라이브러리를 적용해보는 것이 자연스러운 접근법입니다. 바닥부터 커널을 새로 짜는 대신, 이미 여러 팀이 검증해 둔 컴파일러와 런타임을 활용하는 쪽이 안전하고 효율적입니다.&lt;/p&gt;
+&lt;p&gt;문제는 이 선택지의 목록이 빠르게 바뀐다는 점입니다. 2024년까지 PyTorch 진영에서 추론 최적화를 이야기할 때 TorchScript는 당연한 출발점이었습니다. 하지만 2026년 현재 PyTorch 진영의 지형은 크게 달라졌습니다(4절에서 다룹니다). 지금 시점에 어떤 선택지들이 있는지 한 번 정리해볼 필요가 있습니다.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>GPU 최적화의 단위 변화: Thread에서 Tile로</title>
       <link>https://sunghyunjun.github.io/posts/2026-03-30-gpu-optimization-thread-to-tile/</link>

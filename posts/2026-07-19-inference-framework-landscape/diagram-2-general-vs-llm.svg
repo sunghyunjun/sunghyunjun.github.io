@@ -1,0 +1,107 @@
+<svg viewBox="0 0 720 770" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="범용 뉴럴넷의 순전파와 LLM의 autoregressive decoding · KV cache 증가 · continuous batching을 위에서 아래로 전체 너비로 펼쳐서 설명">
+  <defs>
+    <marker id="arrow3" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" class="n-gray"/>
+    </marker>
+  </defs>
+
+  <!-- ============ Section A: 범용 뉴럴넷 추론 (full width) ============ -->
+  <text x="360" y="26" text-anchor="middle" class="lbl n-teal" font-size="13.5" font-weight="700">범용 뉴럴넷 추론</text>
+
+  <rect x="80" y="44" width="120" height="40" rx="8" class="box-neutral" stroke-width="1.2"/>
+  <text x="140" y="68" text-anchor="middle" class="lbl" font-size="12">입력</text>
+  <path d="M200 64 L224 64" class="edge" stroke-width="1.5" marker-end="url(#arrow3)"/>
+
+  <rect x="228" y="40" width="272" height="48" rx="8" class="t-teal s-teal" stroke-width="1.5"/>
+  <text x="364" y="60" text-anchor="middle" class="lbl n-teal" font-size="12" font-weight="700">순전파 (반복 호출 가능)</text>
+  <text x="364" y="76" text-anchor="middle" class="lbl-sub" font-size="9.5">다음 계산이 이전 출력에 좌우되지 않음</text>
+  <path d="M500 64 L524 64" class="edge" stroke-width="1.5" marker-end="url(#arrow3)"/>
+
+  <rect x="528" y="44" width="120" height="40" rx="8" class="box-neutral" stroke-width="1.2"/>
+  <text x="588" y="68" text-anchor="middle" class="lbl" font-size="12">출력</text>
+
+  <text x="360" y="112" text-anchor="middle" class="lbl-sub" font-size="11">요청마다 계산량이 거의 균일하다 — 이 전제 위에서 최적화된다</text>
+  <text x="360" y="130" text-anchor="middle" class="lbl-sub" font-size="10">→ ONNX Runtime · TensorRT · OpenVINO · TVM · IREE (2절)</text>
+
+  <line x1="40" y1="150" x2="680" y2="150" class="edge-dash" stroke-width="1"/>
+
+  <!-- ============ Section B: LLM 추론 (full width) ============ -->
+  <text x="360" y="176" text-anchor="middle" class="lbl n-amber" font-size="13.5" font-weight="700">LLM 추론</text>
+
+  <rect x="80" y="194" width="90" height="36" rx="8" class="box-neutral" stroke-width="1.2"/>
+  <text x="125" y="216" text-anchor="middle" class="lbl" font-size="11.5">prompt</text>
+  <path d="M170 212 L186 212" class="edge" stroke-width="1.5" marker-end="url(#arrow3)"/>
+
+  <rect x="190" y="192" width="140" height="40" rx="8" class="t-blue s-blue" stroke-width="1.5"/>
+  <text x="260" y="210" text-anchor="middle" class="lbl n-blue" font-size="11" font-weight="700">prefill</text>
+  <text x="260" y="224" text-anchor="middle" class="lbl-sub" font-size="9">compute-bound</text>
+
+  <path d="M260 232 L135 258" class="edge" stroke-width="1.5" marker-end="url(#arrow3)"/>
+
+  <path d="M100 254 C 100 238, 620 238, 620 254" class="edge" fill="none" stroke-width="1.2" marker-end="url(#arrow3)"/>
+  <text x="360" y="246" text-anchor="middle" class="lbl-sub" font-size="9.5">토큰마다 반복 (autoregressive)</text>
+
+  <g font-size="11">
+    <rect x="50" y="270" width="138" height="42" rx="6" class="t-amber s-amber" stroke-width="1.2"/>
+    <text x="119" y="296" text-anchor="middle" class="lbl n-amber">decode t1</text>
+    <path d="M188 291 L206 291" class="edge" stroke-width="1.2" marker-end="url(#arrow3)"/>
+
+    <rect x="210" y="270" width="138" height="42" rx="6" class="t-amber s-amber" stroke-width="1.2"/>
+    <text x="279" y="296" text-anchor="middle" class="lbl n-amber">decode t2</text>
+    <path d="M348 291 L366 291" class="edge" stroke-width="1.2" marker-end="url(#arrow3)"/>
+
+    <rect x="370" y="270" width="138" height="42" rx="6" class="t-amber s-amber" stroke-width="1.2"/>
+    <text x="439" y="296" text-anchor="middle" class="lbl n-amber">decode t3</text>
+    <path d="M508 291 L526 291" class="edge" stroke-width="1.2" marker-end="url(#arrow3)"/>
+
+    <rect x="530" y="270" width="138" height="42" rx="6" class="t-amber s-amber" stroke-width="1.2"/>
+    <text x="599" y="296" text-anchor="middle" class="lbl n-amber">decode t4</text>
+  </g>
+
+  <path d="M360 312 L360 336" class="edge" stroke-width="1.4" marker-end="url(#arrow3)"/>
+  <text x="360" y="354" text-anchor="middle" class="lbl-sub" font-size="10.5">반복될수록 KV cache가 자란다 ↓</text>
+
+  <line x1="40" y1="372" x2="680" y2="372" class="edge-dash" stroke-width="1"/>
+
+  <!-- ============ Section C: KV cache (full width) ============ -->
+  <text x="360" y="398" text-anchor="middle" class="lbl n-purple" font-size="13" font-weight="700">KV cache 증가</text>
+
+  <g font-size="11" text-anchor="middle">
+    <text x="119" y="422" class="lbl-sub">t1</text>
+    <text x="279" y="422" class="lbl-sub">t2</text>
+    <text x="439" y="422" class="lbl-sub">t3</text>
+    <text x="599" y="422" class="lbl-sub">t4</text>
+  </g>
+  <rect x="94" y="466" width="50" height="14" class="n-purple"/>
+  <rect x="254" y="452" width="50" height="28" class="n-purple"/>
+  <rect x="414" y="436" width="50" height="44" class="n-purple"/>
+  <rect x="574" y="416" width="50" height="64" class="n-purple"/>
+  <line x1="40" y1="480" x2="680" y2="480" class="edge" stroke-width="1"/>
+  <text x="360" y="504" text-anchor="middle" class="lbl-sub" font-size="11">시퀀스 길이에 비례해 계속 자란다 (memory-bound)</text>
+
+  <line x1="40" y1="522" x2="680" y2="522" class="edge-dash" stroke-width="1"/>
+
+  <!-- ============ Section D: continuous batching (full width) ============ -->
+  <text x="360" y="548" text-anchor="middle" class="lbl" font-size="13" font-weight="700">Continuous batching (연속 배칭)</text>
+
+  <g font-size="11">
+    <text x="42" y="578" class="lbl-sub">요청 A</text>
+    <rect x="100" y="568" width="230" height="18" rx="4" class="t-green s-green" stroke-width="1"/>
+
+    <text x="42" y="610" class="lbl-sub">요청 B</text>
+    <rect x="180" y="600" width="360" height="18" rx="4" class="t-green s-green" stroke-width="1"/>
+
+    <text x="42" y="642" class="lbl-sub">요청 C</text>
+    <rect x="100" y="632" width="120" height="18" rx="4" class="t-green s-green" stroke-width="1"/>
+
+    <text x="42" y="674" class="lbl-sub">요청 D</text>
+    <rect x="280" y="664" width="380" height="18" rx="4" class="t-green s-green" stroke-width="1"/>
+    <path d="M660 673 L678 673" class="edge" stroke-width="1.2" marker-end="url(#arrow3)"/>
+  </g>
+  <line x1="40" y1="698" x2="678" y2="698" class="edge" stroke-width="1"/>
+  <path d="M678 698 L690 698" class="edge" stroke-width="1.2" marker-end="url(#arrow3)"/>
+  <text x="678" y="714" text-anchor="end" class="lbl-sub" font-size="10">시간 →</text>
+
+  <text x="360" y="738" text-anchor="middle" class="lbl-sub" font-size="11">요청마다 시작·종료 시점과 길이가 제각각이다</text>
+  <text x="360" y="756" text-anchor="middle" class="lbl-sub" font-size="10.5">→ vLLM·SGLang·TensorRT-LLM·llama.cpp·Dynamo-Triton (3절) — 이런 동적 특성을 다루려고 태어났다</text>
+</svg>

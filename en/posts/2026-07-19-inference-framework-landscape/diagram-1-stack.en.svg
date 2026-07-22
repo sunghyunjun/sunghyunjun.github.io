@@ -1,0 +1,52 @@
+<svg viewBox="0 0 720 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Inference optimization tools split into general-purpose graph compilers, LLM-specific serving engines, and mobile/edge runtimes, sitting on a shared hardware foundation">
+  <defs>
+    <marker id="arrow1" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" class="n-gray"/>
+    </marker>
+  </defs>
+
+  <!-- top: model/framework -->
+  <rect x="200" y="14" width="320" height="46" rx="10" class="box-panel s-gray" stroke-width="1.5"/>
+  <text x="360" y="42" text-anchor="middle" class="lbl" font-size="13.5" font-weight="700">Model / Framework</text>
+
+  <path d="M290 60 L150 92" class="edge" fill="none" stroke-width="1.4" marker-end="url(#arrow1)"/>
+  <path d="M360 60 L360 92" class="edge" fill="none" stroke-width="1.4" marker-end="url(#arrow1)"/>
+  <path d="M430 60 L590 92" class="edge" fill="none" stroke-width="1.4" marker-end="url(#arrow1)"/>
+
+  <!-- three lanes -->
+  <rect x="20" y="96" width="220" height="130" rx="10" class="t-teal s-teal" stroke-width="1.5"/>
+  <text x="130" y="118" text-anchor="middle" class="lbl n-teal" font-size="11.5" font-weight="700">General-Purpose Graph</text>
+  <text x="130" y="132" text-anchor="middle" class="lbl n-teal" font-size="11.5" font-weight="700">Compilers &amp; Runtimes</text>
+  <text x="130" y="150" text-anchor="middle" class="lbl-sub" font-size="10">Compile the graph, invoke repeatedly</text>
+  <text x="130" y="176" text-anchor="middle" class="lbl-sub" font-size="10">ONNX Runtime · TensorRT</text>
+  <text x="130" y="192" text-anchor="middle" class="lbl-sub" font-size="10">OpenVINO · TVM · IREE</text>
+  <text x="130" y="212" text-anchor="middle" class="lbl-sub" font-size="10.5">→ Sec. 2</text>
+
+  <rect x="250" y="96" width="220" height="130" rx="10" class="t-amber s-amber" stroke-width="1.5"/>
+  <text x="360" y="122" text-anchor="middle" class="lbl n-amber" font-size="12.5" font-weight="700">LLM-Specific Serving Engines</text>
+  <text x="360" y="140" text-anchor="middle" class="lbl-sub" font-size="10">autoregressive decoding +</text>
+  <text x="360" y="154" text-anchor="middle" class="lbl-sub" font-size="10">continuous batching</text>
+  <text x="360" y="176" text-anchor="middle" class="lbl-sub" font-size="10">vLLM · SGLang</text>
+  <text x="360" y="192" text-anchor="middle" class="lbl-sub" font-size="10">TensorRT-LLM · llama.cpp</text>
+  <text x="360" y="212" text-anchor="middle" class="lbl-sub" font-size="10.5">→ Sec. 3</text>
+
+  <rect x="480" y="96" width="220" height="130" rx="10" class="t-green s-green" stroke-width="1.5"/>
+  <text x="590" y="118" text-anchor="middle" class="lbl n-green" font-size="11.5" font-weight="700">Mobile/Edge-Specialized</text>
+  <text x="590" y="132" text-anchor="middle" class="lbl n-green" font-size="11.5" font-weight="700">Runtimes</text>
+  <text x="590" y="150" text-anchor="middle" class="lbl-sub" font-size="10">Optimized for on-device deployment</text>
+  <text x="590" y="176" text-anchor="middle" class="lbl-sub" font-size="10">ExecuTorch · Core ML</text>
+  <text x="590" y="192" text-anchor="middle" class="lbl-sub" font-size="10">LiteRT · MNN</text>
+  <text x="590" y="212" text-anchor="middle" class="lbl-sub" font-size="10.5">→ Sec. 5</text>
+
+  <!-- converge into one shared hardware band -->
+  <path d="M130 226 L130 250" class="edge" stroke-width="1.4" marker-end="url(#arrow1)"/>
+  <path d="M360 226 L360 250" class="edge" stroke-width="1.4" marker-end="url(#arrow1)"/>
+  <path d="M590 226 L590 250" class="edge" stroke-width="1.4" marker-end="url(#arrow1)"/>
+
+  <rect x="20" y="254" width="680" height="62" rx="10" class="box-neutral" stroke-width="1.3"/>
+  <text x="360" y="274" text-anchor="middle" class="lbl-sub" font-size="10.5">Shared hardware foundation (all three branches can, in principle, target this)</text>
+  <text x="360" y="298" text-anchor="middle" class="lbl" font-size="11.5">NVIDIA GPU · AMD ROCm · Apple Silicon · General CPU · Mobile/Edge Silicon</text>
+
+  <text x="360" y="344" text-anchor="middle" class="lbl-sub" font-size="11" font-style="italic">PyTorch's own deployment paths (Sec. 4) and vendor-specific details (Sec. 5)</text>
+  <text x="360" y="364" text-anchor="middle" class="lbl-sub" font-size="11" font-style="italic">are a separate lens that cuts across these three branches.</text>
+</svg>

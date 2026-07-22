@@ -6,8 +6,17 @@
     <description>Recent content on Sunghyun Jun Dev Note (EN)</description>
     <generator>Hugo -- 0.164.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 11 May 2026 00:52:08 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 23 Jul 2026 02:09:23 +0900</lastBuildDate>
     <atom:link href="https://sunghyunjun.github.io/en/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Inference Optimization: What Should You Choose?</title>
+      <link>https://sunghyunjun.github.io/en/posts/2026-07-19-inference-framework-landscape/</link>
+      <pubDate>Sun, 19 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>https://sunghyunjun.github.io/en/posts/2026-07-19-inference-framework-landscape/</guid>
+      <description>&lt;h3 id=&#34;1-an-overview-of-inference-optimization-techniques&#34;&gt;1. An Overview of Inference Optimization Techniques&lt;/h3&gt;
+&lt;p&gt;Running a model as a production service requires an inference optimization step. Reaching for a proven framework or library is the natural approach. Rather than writing kernels from scratch, it&amp;rsquo;s safer and more efficient to build on compilers and runtimes that other teams have already validated.&lt;/p&gt;
+&lt;p&gt;The problem is that this list of options changes fast. Up through 2024, TorchScript was the obvious starting point whenever inference optimization came up in the PyTorch world. By mid-2026, that landscape has shifted considerably (more on this in Section 4). It seems worth taking stock of what the options actually look like right now.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>The Shift in GPU Optimization: From Threads to Tiles</title>
       <link>https://sunghyunjun.github.io/en/posts/2026-03-30-gpu-optimization-thread-to-tile/</link>

@@ -1,0 +1,107 @@
+<svg viewBox="0 0 720 770" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A general neural network's forward pass vs. an LLM's autoregressive decoding, growing KV cache, and continuous batching, laid out top to bottom at full width">
+  <defs>
+    <marker id="arrow3" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" class="n-gray"/>
+    </marker>
+  </defs>
+
+  <!-- ============ Section A: General neural net inference (full width) ============ -->
+  <text x="360" y="26" text-anchor="middle" class="lbl n-teal" font-size="13.5" font-weight="700">General Neural Net Inference</text>
+
+  <rect x="80" y="44" width="120" height="40" rx="8" class="box-neutral" stroke-width="1.2"/>
+  <text x="140" y="68" text-anchor="middle" class="lbl" font-size="12">Input</text>
+  <path d="M200 64 L224 64" class="edge" stroke-width="1.5" marker-end="url(#arrow3)"/>
+
+  <rect x="200" y="40" width="320" height="48" rx="8" class="t-teal s-teal" stroke-width="1.5"/>
+  <text x="360" y="60" text-anchor="middle" class="lbl n-teal" font-size="12" font-weight="700">Forward pass (can be invoked repeatedly)</text>
+  <text x="360" y="76" text-anchor="middle" class="lbl-sub" font-size="9.5">Next computation doesn't depend on previous output</text>
+  <path d="M520 64 L544 64" class="edge" stroke-width="1.5" marker-end="url(#arrow3)"/>
+
+  <rect x="548" y="44" width="120" height="40" rx="8" class="box-neutral" stroke-width="1.2"/>
+  <text x="608" y="68" text-anchor="middle" class="lbl" font-size="12">Output</text>
+
+  <text x="360" y="112" text-anchor="middle" class="lbl-sub" font-size="10.5">Compute per request is roughly uniform — optimization builds on this premise</text>
+  <text x="360" y="130" text-anchor="middle" class="lbl-sub" font-size="10">→ ONNX Runtime · TensorRT · OpenVINO · TVM · IREE (Sec. 2)</text>
+
+  <line x1="40" y1="150" x2="680" y2="150" class="edge-dash" stroke-width="1"/>
+
+  <!-- ============ Section B: LLM inference (full width) ============ -->
+  <text x="360" y="176" text-anchor="middle" class="lbl n-amber" font-size="13.5" font-weight="700">LLM Inference</text>
+
+  <rect x="70" y="194" width="90" height="36" rx="8" class="box-neutral" stroke-width="1.2"/>
+  <text x="115" y="216" text-anchor="middle" class="lbl" font-size="11.5">prompt</text>
+  <path d="M160 212 L176 212" class="edge" stroke-width="1.5" marker-end="url(#arrow3)"/>
+
+  <rect x="180" y="192" width="140" height="40" rx="8" class="t-blue s-blue" stroke-width="1.5"/>
+  <text x="250" y="210" text-anchor="middle" class="lbl n-blue" font-size="11" font-weight="700">prefill</text>
+  <text x="250" y="224" text-anchor="middle" class="lbl-sub" font-size="9">compute-bound</text>
+
+  <path d="M250 232 L135 258" class="edge" stroke-width="1.5" marker-end="url(#arrow3)"/>
+
+  <path d="M100 254 C 100 238, 620 238, 620 254" class="edge" fill="none" stroke-width="1.2" marker-end="url(#arrow3)"/>
+  <text x="360" y="246" text-anchor="middle" class="lbl-sub" font-size="9.5">Repeats per token (autoregressive)</text>
+
+  <g font-size="11">
+    <rect x="50" y="270" width="138" height="42" rx="6" class="t-amber s-amber" stroke-width="1.2"/>
+    <text x="119" y="296" text-anchor="middle" class="lbl n-amber">decode t1</text>
+    <path d="M188 291 L206 291" class="edge" stroke-width="1.2" marker-end="url(#arrow3)"/>
+
+    <rect x="210" y="270" width="138" height="42" rx="6" class="t-amber s-amber" stroke-width="1.2"/>
+    <text x="279" y="296" text-anchor="middle" class="lbl n-amber">decode t2</text>
+    <path d="M348 291 L366 291" class="edge" stroke-width="1.2" marker-end="url(#arrow3)"/>
+
+    <rect x="370" y="270" width="138" height="42" rx="6" class="t-amber s-amber" stroke-width="1.2"/>
+    <text x="439" y="296" text-anchor="middle" class="lbl n-amber">decode t3</text>
+    <path d="M508 291 L526 291" class="edge" stroke-width="1.2" marker-end="url(#arrow3)"/>
+
+    <rect x="530" y="270" width="138" height="42" rx="6" class="t-amber s-amber" stroke-width="1.2"/>
+    <text x="599" y="296" text-anchor="middle" class="lbl n-amber">decode t4</text>
+  </g>
+
+  <path d="M360 312 L360 336" class="edge" stroke-width="1.4" marker-end="url(#arrow3)"/>
+  <text x="360" y="354" text-anchor="middle" class="lbl-sub" font-size="10.5">KV cache grows with each repetition ↓</text>
+
+  <line x1="40" y1="372" x2="680" y2="372" class="edge-dash" stroke-width="1"/>
+
+  <!-- ============ Section C: KV cache (full width) ============ -->
+  <text x="360" y="398" text-anchor="middle" class="lbl n-purple" font-size="13" font-weight="700">KV Cache Growth</text>
+
+  <g font-size="11" text-anchor="middle">
+    <text x="119" y="422" class="lbl-sub">t1</text>
+    <text x="279" y="422" class="lbl-sub">t2</text>
+    <text x="439" y="422" class="lbl-sub">t3</text>
+    <text x="599" y="422" class="lbl-sub">t4</text>
+  </g>
+  <rect x="94" y="466" width="50" height="14" class="n-purple"/>
+  <rect x="254" y="452" width="50" height="28" class="n-purple"/>
+  <rect x="414" y="436" width="50" height="44" class="n-purple"/>
+  <rect x="574" y="416" width="50" height="64" class="n-purple"/>
+  <line x1="40" y1="480" x2="680" y2="480" class="edge" stroke-width="1"/>
+  <text x="360" y="504" text-anchor="middle" class="lbl-sub" font-size="10.5">Keeps growing in proportion to sequence length (memory-bound)</text>
+
+  <line x1="40" y1="522" x2="680" y2="522" class="edge-dash" stroke-width="1"/>
+
+  <!-- ============ Section D: continuous batching (full width) ============ -->
+  <text x="360" y="548" text-anchor="middle" class="lbl" font-size="13" font-weight="700">Continuous Batching</text>
+
+  <g font-size="11">
+    <text x="42" y="578" class="lbl-sub">Request A</text>
+    <rect x="112" y="568" width="218" height="18" rx="4" class="t-green s-green" stroke-width="1"/>
+
+    <text x="42" y="610" class="lbl-sub">Request B</text>
+    <rect x="192" y="600" width="348" height="18" rx="4" class="t-green s-green" stroke-width="1"/>
+
+    <text x="42" y="642" class="lbl-sub">Request C</text>
+    <rect x="112" y="632" width="108" height="18" rx="4" class="t-green s-green" stroke-width="1"/>
+
+    <text x="42" y="674" class="lbl-sub">Request D</text>
+    <rect x="292" y="664" width="368" height="18" rx="4" class="t-green s-green" stroke-width="1"/>
+    <path d="M660 673 L678 673" class="edge" stroke-width="1.2" marker-end="url(#arrow3)"/>
+  </g>
+  <line x1="40" y1="698" x2="678" y2="698" class="edge" stroke-width="1"/>
+  <path d="M678 698 L690 698" class="edge" stroke-width="1.2" marker-end="url(#arrow3)"/>
+  <text x="678" y="714" text-anchor="end" class="lbl-sub" font-size="10">Time →</text>
+
+  <text x="360" y="738" text-anchor="middle" class="lbl-sub" font-size="11">Start/end times and lengths differ per request</text>
+  <text x="360" y="756" text-anchor="middle" class="lbl-sub" font-size="10">→ vLLM · SGLang · TensorRT-LLM · llama.cpp · Dynamo-Triton (Sec. 3) — built to handle exactly this</text>
+</svg>

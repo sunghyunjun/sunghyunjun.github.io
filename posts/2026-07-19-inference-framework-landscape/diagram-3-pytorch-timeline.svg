@@ -1,0 +1,57 @@
+<svg viewBox="0 0 720 460" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="PyTorch 배포 경로 계보: TorchScript의 쇠퇴와 torch.export, AOTInductor, ExecuTorch, torch.compile의 부상">
+  <defs>
+    <marker id="arrow4" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" class="n-gray"/>
+    </marker>
+  </defs>
+
+  <!-- year gridlines -->
+  <g class="lbl-sub" font-size="11">
+    <line x1="100" y1="24" x2="100" y2="430" class="edge-dash" stroke-width="1"/>
+    <text x="100" y="16" text-anchor="middle">2023</text>
+    <line x1="280" y1="24" x2="280" y2="430" class="edge-dash" stroke-width="1"/>
+    <text x="280" y="16" text-anchor="middle">2024</text>
+    <line x1="460" y1="24" x2="460" y2="430" class="edge-dash" stroke-width="1"/>
+    <text x="460" y="16" text-anchor="middle">2025</text>
+    <line x1="620" y1="24" x2="620" y2="430" class="edge-dash" stroke-width="1"/>
+    <text x="620" y="16" text-anchor="middle">2026</text>
+  </g>
+
+  <!-- Row: TorchScript (fading out) -->
+  <text x="20" y="68" class="lbl" font-size="12.5" font-weight="700">TorchScript</text>
+  <line x1="100" y1="80" x2="460" y2="80" class="s-gray" stroke-width="4" stroke-linecap="round"/>
+  <line x1="460" y1="80" x2="560" y2="80" class="s-gray" stroke-width="4" stroke-linecap="round" stroke-dasharray="2 6" opacity="0.55"/>
+  <circle cx="280" cy="80" r="4.5" class="n-red"/>
+  <text x="280" y="102" text-anchor="middle" class="lbl-sub" font-size="10">2024-02 &quot;우월한 대체재</text>
+  <text x="280" y="114" text-anchor="middle" class="lbl-sub" font-size="10">없이는 안 없앤다&quot;</text>
+  <circle cx="460" cy="80" r="4.5" class="n-red"/>
+  <text x="460" y="102" text-anchor="middle" class="lbl-sub" font-size="10">2.10 공식</text>
+  <text x="460" y="114" text-anchor="middle" class="lbl-sub" font-size="10">deprecated</text>
+  <circle cx="560" cy="80" r="4.5" class="n-red"/>
+  <text x="560" y="102" text-anchor="middle" class="lbl-sub" font-size="10">2.11 문서 페이지</text>
+  <text x="560" y="114" text-anchor="middle" class="lbl-sub" font-size="10">삭제·리다이렉트</text>
+
+  <!-- Row: torch.export -->
+  <text x="20" y="168" class="lbl" font-size="12.5" font-weight="700">torch.export</text>
+  <line x1="280" y1="180" x2="700" y2="180" class="s-teal" stroke-width="5" stroke-linecap="round"/>
+  <text x="290" y="200" class="lbl-sub" font-size="10">trace/script의 공식 후계자 · soundness 보장</text>
+
+  <!-- Row: AOTInductor -->
+  <text x="20" y="238" class="lbl" font-size="12.5" font-weight="700">AOTInductor</text>
+  <line x1="280" y1="250" x2="380" y2="250" class="s-blue" stroke-width="3" stroke-linecap="round" stroke-dasharray="2 5" opacity="0.6"/>
+  <line x1="380" y1="250" x2="700" y2="250" class="s-blue" stroke-width="5" stroke-linecap="round"/>
+  <text x="290" y="270" class="lbl-sub" font-size="10">2023 프로토타입 → 서버 AOT 배포(.so), 디바이스 이식 불가</text>
+
+  <!-- Row: ExecuTorch -->
+  <text x="20" y="308" class="lbl" font-size="12.5" font-weight="700">ExecuTorch</text>
+  <line x1="280" y1="320" x2="460" y2="320" class="s-purple" stroke-width="3.5" stroke-linecap="round"/>
+  <line x1="460" y1="320" x2="700" y2="320" class="s-purple" stroke-width="6" stroke-linecap="round"/>
+  <text x="290" y="340" class="lbl-sub" font-size="10">임베디드 런타임 후계자 → 2025~ CUDA 등 14개 백엔드로 확장</text>
+
+  <!-- Row: torch.compile -->
+  <text x="20" y="378" class="lbl" font-size="12.5" font-weight="700">torch.compile</text>
+  <line x1="100" y1="390" x2="700" y2="390" class="s-amber" stroke-width="6" stroke-linecap="round"/>
+  <text x="290" y="410" class="lbl-sub" font-size="10">2.13: MPS FlexAttention(최대 12x) · ROCm AOTriton · CuTeDSL</text>
+
+  <text x="360" y="446" text-anchor="middle" class="lbl-sub" font-size="11.5" font-style="italic">TorchScript 한 줄이 없어진 자리를 네 갈래 경로가 나눠 채웠다</text>
+</svg>

@@ -1,0 +1,133 @@
+<svg viewBox="0 0 720 530" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="18개 프레임워크의 NVIDIA/AMD/Apple/CPU/모바일 디바이스 커버리지 매트릭스">
+<g font-size="10.5">
+<circle cx="26" cy="18" r="7.5" class="st-yes"/><text x="26" y="21.3" text-anchor="middle" class="st-glyph" font-size="10">✓</text><text x="42" y="22" class="lbl-sub">확인됨</text>
+<circle cx="118" cy="18" r="7.5" class="st-mid"/><text x="118" y="21.3" text-anchor="middle" class="st-glyph" font-size="9.5">~</text><text x="134" y="22" class="lbl-sub">부분/진행중</text>
+<circle cx="226" cy="18" r="7.5" class="st-no"/><text x="226" y="21.2" text-anchor="middle" class="st-glyph" font-size="9">✕</text><text x="242" y="22" class="lbl-sub">미지원</text>
+<circle cx="312" cy="18" r="7.5" class="st-na"/><text x="312" y="21.3" text-anchor="middle" class="st-glyph-na" font-size="9.5">?</text><text x="328" y="22" class="lbl-sub">이번 조사 미확인</text>
+</g>
+<g font-size="11" font-weight="700">
+<text x="250" y="52" text-anchor="middle" class="lbl">NVIDIA</text>
+<text x="340" y="52" text-anchor="middle" class="lbl">AMD</text>
+<text x="430" y="52" text-anchor="middle" class="lbl">Apple</text>
+<text x="520" y="52" text-anchor="middle" class="lbl">CPU</text>
+<text x="610" y="52" text-anchor="middle" class="lbl">모바일</text>
+</g>
+<line x1="20" y1="60" x2="700" y2="60" class="edge" stroke-width="1"/>
+<text x="232" y="82" text-anchor="end" class="lbl" font-size="11.5">torch.export + AOTInductor</text>
+<circle cx="250" cy="78" r="7.5" class="st-yes"/><text x="250" y="81.3" text-anchor="middle" class="st-glyph" font-size="10">✓</text>
+<circle cx="340" cy="78" r="7.5" class="st-na"/><text x="340" y="81.3" text-anchor="middle" class="st-glyph-na" font-size="9.5">?</text>
+<circle cx="430" cy="78" r="7.5" class="st-na"/><text x="430" y="81.3" text-anchor="middle" class="st-glyph-na" font-size="9.5">?</text>
+<circle cx="520" cy="78" r="7.5" class="st-yes"/><text x="520" y="81.3" text-anchor="middle" class="st-glyph" font-size="10">✓</text>
+<circle cx="610" cy="78" r="7.5" class="st-no"/><text x="610" y="81.2" text-anchor="middle" class="st-glyph" font-size="9">✕</text>
+<rect x="20" y="91" width="680" height="24" class="box-neutral" stroke="none" opacity="0.5"/>
+<text x="232" y="106" text-anchor="end" class="lbl" font-size="11.5">ExecuTorch</text>
+<circle cx="250" cy="102" r="7.5" class="st-yes"/><text x="250" y="105.3" text-anchor="middle" class="st-glyph" font-size="10">✓</text>
+<circle cx="340" cy="102" r="7.5" class="st-no"/><text x="340" y="105.2" text-anchor="middle" class="st-glyph" font-size="9">✕</text>
+<circle cx="430" cy="102" r="7.5" class="st-yes"/><text x="430" y="105.3" text-anchor="middle" class="st-glyph" font-size="10">✓</text>
+<circle cx="520" cy="102" r="7.5" class="st-yes"/><text x="520" y="105.3" text-anchor="middle" class="st-glyph" font-size="10">✓</text>
+<circle cx="610" cy="102" r="7.5" class="st-yes"/><text x="610" y="105.3" text-anchor="middle" class="st-glyph" font-size="10">✓</text>
+<text x="232" y="130" text-anchor="end" class="lbl" font-size="11.5">torch.compile / Inductor</text>
+<circle cx="250" cy="126" r="7.5" class="st-yes"/><text x="250" y="129.3" text-anchor="middle" class="st-glyph" font-size="10">✓</text>
+<circle cx="340" cy="126" r="7.5" class="st-mid"/><text x="340" y="129.3" text-anchor="middle" class="st-glyph" font-size="9.5">~</text>
+<circle cx="430" cy="126" r="7.5" class="st-yes"/><text x="430" y="129.3" text-anchor="middle" class="st-glyph" font-size="10">✓</text>
+<circle cx="520" cy="126" r="7.5" class="st-yes"/><text x="520" y="129.3" text-anchor="middle" class="st-glyph" font-size="10">✓</text>
+<circle cx="610" cy="126" r="7.5" class="st-no"/><text x="610" y="129.2" text-anchor="middle" class="st-glyph" font-size="9">✕</text>
+<rect x="20" y="139" width="680" height="24" class="box-neutral" stroke="none" opacity="0.5"/>
+<text x="232" y="154" text-anchor="end" class="lbl" font-size="11.5">ONNX Runtime</text>
+<circle cx="250" cy="150" r="7.5" class="st-yes"/><text x="250" y="153.3" text-anchor="middle" class="st-glyph" font-size="10">✓</text>
+<circle cx="340" cy="150" r="7.5" class="st-na"/><text x="340" y="153.3" text-anchor="middle" class="st-glyph-na" font-size="9.5">?</text>
+<circle cx="430" cy="150" r="7.5" class="st-na"/><text x="430" y="153.3" text-anchor="middle" class="st-glyph-na" font-size="9.5">?</text>
+<circle cx="520" cy="150" r="7.5" class="st-yes"/><text x="520" y="153.3" text-anchor="middle" class="st-glyph" font-size="10">✓</text>
+<circle cx="610" cy="150" r="7.5" class="st-mid"/><text x="610" y="153.3" text-anchor="middle" class="st-glyph" font-size="9.5">~</text>
+<text x="232" y="178" text-anchor="end" class="lbl" font-size="11.5">OpenVINO</text>
+<circle cx="250" cy="174" r="7.5" class="st-mid"/><text x="250" y="177.3" text-anchor="middle" class="st-glyph" font-size="9.5">~</text>
+<circle cx="340" cy="174" r="7.5" class="st-no"/><text x="340" y="177.2" text-anchor="middle" class="st-glyph" font-size="9">✕</text>
+<circle cx="430" cy="174" r="7.5" class="st-no"/><text x="430" y="177.2" text-anchor="middle" class="st-glyph" font-size="9">✕</text>
+<circle cx="520" cy="174" r="7.5" class="st-yes"/><text x="520" y="177.3" text-anchor="middle" class="st-glyph" font-size="10">✓</text>
+<circle cx="610" cy="174" r="7.5" class="st-mid"/><text x="610" y="177.3" text-anchor="middle" class="st-glyph" font-size="9.5">~</text>
+<rect x="20" y="187" width="680" height="24" class="box-neutral" stroke="none" opacity="0.5"/>
+<text x="232" y="202" text-anchor="end" class="lbl" font-size="11.5">TensorRT</text>
+<circle cx="250" cy="198" r="7.5" class="st-yes"/><text x="250" y="201.3" text-anchor="middle" class="st-glyph" font-size="10">✓</text>
+<circle cx="340" cy="198" r="7.5" class="st-no"/><text x="340" y="201.2" text-anchor="middle" class="st-glyph" font-size="9">✕</text>
+<circle cx="430" cy="198" r="7.5" class="st-no"/><text x="430" y="201.2" text-anchor="middle" class="st-glyph" font-size="9">✕</text>
+<circle cx="520" cy="198" r="7.5" class="st-no"/><text x="520" y="201.2" text-anchor="middle" class="st-glyph" font-size="9">✕</text>
+<circle cx="610" cy="198" r="7.5" class="st-mid"/><text x="610" y="201.3" text-anchor="middle" class="st-glyph" font-size="9.5">~</text>
+<text x="232" y="226" text-anchor="end" class="lbl" font-size="11.5">Apache TVM</text>
+<circle cx="250" cy="222" r="7.5" class="st-yes"/><text x="250" y="225.3" text-anchor="middle" class="st-glyph" font-size="10">✓</text>
+<circle cx="340" cy="222" r="7.5" class="st-na"/><text x="340" y="225.3" text-anchor="middle" class="st-glyph-na" font-size="9.5">?</text>
+<circle cx="430" cy="222" r="7.5" class="st-na"/><text x="430" y="225.3" text-anchor="middle" class="st-glyph-na" font-size="9.5">?</text>
+<circle cx="520" cy="222" r="7.5" class="st-yes"/><text x="520" y="225.3" text-anchor="middle" class="st-glyph" font-size="10">✓</text>
+<circle cx="610" cy="222" r="7.5" class="st-na"/><text x="610" y="225.3" text-anchor="middle" class="st-glyph-na" font-size="9.5">?</text>
+<rect x="20" y="235" width="680" height="24" class="box-neutral" stroke="none" opacity="0.5"/>
+<text x="232" y="250" text-anchor="end" class="lbl" font-size="11.5">IREE (MLIR)</text>
+<circle cx="250" cy="246" r="7.5" class="st-yes"/><text x="250" y="249.3" text-anchor="middle" class="st-glyph" font-size="10">✓</text>
+<circle cx="340" cy="246" r="7.5" class="st-yes"/><text x="340" y="249.3" text-anchor="middle" class="st-glyph" font-size="10">✓</text>
+<circle cx="430" cy="246" r="7.5" class="st-yes"/><text x="430" y="249.3" text-anchor="middle" class="st-glyph" font-size="10">✓</text>
+<circle cx="520" cy="246" r="7.5" class="st-yes"/><text x="520" y="249.3" text-anchor="middle" class="st-glyph" font-size="10">✓</text>
+<circle cx="610" cy="246" r="7.5" class="st-na"/><text x="610" y="249.3" text-anchor="middle" class="st-glyph-na" font-size="9.5">?</text>
+<text x="232" y="274" text-anchor="end" class="lbl" font-size="11.5">vLLM</text>
+<circle cx="250" cy="270" r="7.5" class="st-yes"/><text x="250" y="273.3" text-anchor="middle" class="st-glyph" font-size="10">✓</text>
+<circle cx="340" cy="270" r="7.5" class="st-yes"/><text x="340" y="273.3" text-anchor="middle" class="st-glyph" font-size="10">✓</text>
+<circle cx="430" cy="270" r="7.5" class="st-mid"/><text x="430" y="273.3" text-anchor="middle" class="st-glyph" font-size="9.5">~</text>
+<circle cx="520" cy="270" r="7.5" class="st-na"/><text x="520" y="273.3" text-anchor="middle" class="st-glyph-na" font-size="9.5">?</text>
+<circle cx="610" cy="270" r="7.5" class="st-no"/><text x="610" y="273.2" text-anchor="middle" class="st-glyph" font-size="9">✕</text>
+<rect x="20" y="283" width="680" height="24" class="box-neutral" stroke="none" opacity="0.5"/>
+<text x="232" y="298" text-anchor="end" class="lbl" font-size="11.5">SGLang</text>
+<circle cx="250" cy="294" r="7.5" class="st-yes"/><text x="250" y="297.3" text-anchor="middle" class="st-glyph" font-size="10">✓</text>
+<circle cx="340" cy="294" r="7.5" class="st-na"/><text x="340" y="297.3" text-anchor="middle" class="st-glyph-na" font-size="9.5">?</text>
+<circle cx="430" cy="294" r="7.5" class="st-mid"/><text x="430" y="297.3" text-anchor="middle" class="st-glyph" font-size="9.5">~</text>
+<circle cx="520" cy="294" r="7.5" class="st-na"/><text x="520" y="297.3" text-anchor="middle" class="st-glyph-na" font-size="9.5">?</text>
+<circle cx="610" cy="294" r="7.5" class="st-no"/><text x="610" y="297.2" text-anchor="middle" class="st-glyph" font-size="9">✕</text>
+<text x="232" y="322" text-anchor="end" class="lbl" font-size="11.5">TensorRT-LLM</text>
+<circle cx="250" cy="318" r="7.5" class="st-yes"/><text x="250" y="321.3" text-anchor="middle" class="st-glyph" font-size="10">✓</text>
+<circle cx="340" cy="318" r="7.5" class="st-no"/><text x="340" y="321.2" text-anchor="middle" class="st-glyph" font-size="9">✕</text>
+<circle cx="430" cy="318" r="7.5" class="st-no"/><text x="430" y="321.2" text-anchor="middle" class="st-glyph" font-size="9">✕</text>
+<circle cx="520" cy="318" r="7.5" class="st-no"/><text x="520" y="321.2" text-anchor="middle" class="st-glyph" font-size="9">✕</text>
+<circle cx="610" cy="318" r="7.5" class="st-no"/><text x="610" y="321.2" text-anchor="middle" class="st-glyph" font-size="9">✕</text>
+<rect x="20" y="331" width="680" height="24" class="box-neutral" stroke="none" opacity="0.5"/>
+<text x="232" y="346" text-anchor="end" class="lbl" font-size="11.5">NVIDIA Dynamo-Triton</text>
+<circle cx="250" cy="342" r="7.5" class="st-yes"/><text x="250" y="345.3" text-anchor="middle" class="st-glyph" font-size="10">✓</text>
+<circle cx="340" cy="342" r="7.5" class="st-no"/><text x="340" y="345.2" text-anchor="middle" class="st-glyph" font-size="9">✕</text>
+<circle cx="430" cy="342" r="7.5" class="st-no"/><text x="430" y="345.2" text-anchor="middle" class="st-glyph" font-size="9">✕</text>
+<circle cx="520" cy="342" r="7.5" class="st-mid"/><text x="520" y="345.3" text-anchor="middle" class="st-glyph" font-size="9.5">~</text>
+<circle cx="610" cy="342" r="7.5" class="st-no"/><text x="610" y="345.2" text-anchor="middle" class="st-glyph" font-size="9">✕</text>
+<text x="232" y="370" text-anchor="end" class="lbl" font-size="11.5">llama.cpp / GGML</text>
+<circle cx="250" cy="366" r="7.5" class="st-yes"/><text x="250" y="369.3" text-anchor="middle" class="st-glyph" font-size="10">✓</text>
+<circle cx="340" cy="366" r="7.5" class="st-yes"/><text x="340" y="369.3" text-anchor="middle" class="st-glyph" font-size="10">✓</text>
+<circle cx="430" cy="366" r="7.5" class="st-yes"/><text x="430" y="369.3" text-anchor="middle" class="st-glyph" font-size="10">✓</text>
+<circle cx="520" cy="366" r="7.5" class="st-yes"/><text x="520" y="369.3" text-anchor="middle" class="st-glyph" font-size="10">✓</text>
+<circle cx="610" cy="366" r="7.5" class="st-mid"/><text x="610" y="369.3" text-anchor="middle" class="st-glyph" font-size="9.5">~</text>
+<rect x="20" y="379" width="680" height="24" class="box-neutral" stroke="none" opacity="0.5"/>
+<text x="232" y="394" text-anchor="end" class="lbl" font-size="11.5">Core ML</text>
+<circle cx="250" cy="390" r="7.5" class="st-no"/><text x="250" y="393.2" text-anchor="middle" class="st-glyph" font-size="9">✕</text>
+<circle cx="340" cy="390" r="7.5" class="st-no"/><text x="340" y="393.2" text-anchor="middle" class="st-glyph" font-size="9">✕</text>
+<circle cx="430" cy="390" r="7.5" class="st-yes"/><text x="430" y="393.3" text-anchor="middle" class="st-glyph" font-size="10">✓</text>
+<circle cx="520" cy="390" r="7.5" class="st-yes"/><text x="520" y="393.3" text-anchor="middle" class="st-glyph" font-size="10">✓</text>
+<circle cx="610" cy="390" r="7.5" class="st-yes"/><text x="610" y="393.3" text-anchor="middle" class="st-glyph" font-size="10">✓</text>
+<text x="232" y="418" text-anchor="end" class="lbl" font-size="11.5">MLX</text>
+<circle cx="250" cy="414" r="7.5" class="st-no"/><text x="250" y="417.2" text-anchor="middle" class="st-glyph" font-size="9">✕</text>
+<circle cx="340" cy="414" r="7.5" class="st-no"/><text x="340" y="417.2" text-anchor="middle" class="st-glyph" font-size="9">✕</text>
+<circle cx="430" cy="414" r="7.5" class="st-yes"/><text x="430" y="417.3" text-anchor="middle" class="st-glyph" font-size="10">✓</text>
+<circle cx="520" cy="414" r="7.5" class="st-no"/><text x="520" y="417.2" text-anchor="middle" class="st-glyph" font-size="9">✕</text>
+<circle cx="610" cy="414" r="7.5" class="st-no"/><text x="610" y="417.2" text-anchor="middle" class="st-glyph" font-size="9">✕</text>
+<rect x="20" y="427" width="680" height="24" class="box-neutral" stroke="none" opacity="0.5"/>
+<text x="232" y="442" text-anchor="end" class="lbl" font-size="11.5">LiteRT (구 TFLite)</text>
+<circle cx="250" cy="438" r="7.5" class="st-no"/><text x="250" y="441.2" text-anchor="middle" class="st-glyph" font-size="9">✕</text>
+<circle cx="340" cy="438" r="7.5" class="st-no"/><text x="340" y="441.2" text-anchor="middle" class="st-glyph" font-size="9">✕</text>
+<circle cx="430" cy="438" r="7.5" class="st-mid"/><text x="430" y="441.3" text-anchor="middle" class="st-glyph" font-size="9.5">~</text>
+<circle cx="520" cy="438" r="7.5" class="st-yes"/><text x="520" y="441.3" text-anchor="middle" class="st-glyph" font-size="10">✓</text>
+<circle cx="610" cy="438" r="7.5" class="st-yes"/><text x="610" y="441.3" text-anchor="middle" class="st-glyph" font-size="10">✓</text>
+<text x="232" y="466" text-anchor="end" class="lbl" font-size="11.5">MNN</text>
+<circle cx="250" cy="462" r="7.5" class="st-yes"/><text x="250" y="465.3" text-anchor="middle" class="st-glyph" font-size="10">✓</text>
+<circle cx="340" cy="462" r="7.5" class="st-na"/><text x="340" y="465.3" text-anchor="middle" class="st-glyph-na" font-size="9.5">?</text>
+<circle cx="430" cy="462" r="7.5" class="st-yes"/><text x="430" y="465.3" text-anchor="middle" class="st-glyph" font-size="10">✓</text>
+<circle cx="520" cy="462" r="7.5" class="st-yes"/><text x="520" y="465.3" text-anchor="middle" class="st-glyph" font-size="10">✓</text>
+<circle cx="610" cy="462" r="7.5" class="st-yes"/><text x="610" y="465.3" text-anchor="middle" class="st-glyph" font-size="10">✓</text>
+<rect x="20" y="475" width="680" height="24" class="box-neutral" stroke="none" opacity="0.5"/>
+<text x="232" y="490" text-anchor="end" class="lbl" font-size="11.5">MIGraphX</text>
+<circle cx="250" cy="486" r="7.5" class="st-no"/><text x="250" y="489.2" text-anchor="middle" class="st-glyph" font-size="9">✕</text>
+<circle cx="340" cy="486" r="7.5" class="st-yes"/><text x="340" y="489.3" text-anchor="middle" class="st-glyph" font-size="10">✓</text>
+<circle cx="430" cy="486" r="7.5" class="st-no"/><text x="430" y="489.2" text-anchor="middle" class="st-glyph" font-size="9">✕</text>
+<circle cx="520" cy="486" r="7.5" class="st-yes"/><text x="520" y="489.3" text-anchor="middle" class="st-glyph" font-size="10">✓</text>
+<circle cx="610" cy="486" r="7.5" class="st-no"/><text x="610" y="489.2" text-anchor="middle" class="st-glyph" font-size="9">✕</text>
+</svg>
