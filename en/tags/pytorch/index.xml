@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>PyTorch on Sunghyun Jun Dev Note</title>
+    <title>PyTorch on Sunghyun Jun</title>
     <link>https://sunghyunjun.github.io/en/tags/pytorch/</link>
-    <description>Recent content in PyTorch on Sunghyun Jun Dev Note</description>
+    <description>Recent content in PyTorch on Sunghyun Jun</description>
     <generator>Hugo -- 0.167.0</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 04 Oct 2026 00:23:34 +0900</lastBuildDate>
