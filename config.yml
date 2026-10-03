@@ -1,6 +1,6 @@
 baseURL: https://sunghyunjun.github.io/
 languageCode: ko-kr
-title: Sunghyun Jun Dev Note
+title: Sunghyun Jun
 theme: "PaperMod"
 ignoreFiles: blog-example
 
@@ -22,8 +22,9 @@ languages:
     languageName: "🇰🇷 KO"
     languageCode: "ko-kr"
     weight: 1
-    title: Sunghyun Jun Dev Note
+    title: Sunghyun Jun
     params:
+      description: "추론 최적화에서 컴파일러와 과학 계산까지, 직접 측정하며 기록합니다."
       homeInfoParams:
         Title: "전성현입니다"
         Content: >-
@@ -34,8 +35,9 @@ languages:
     languageName: "🇺🇸 EN"
     languageCode: "en-us"
     weight: 2
-    title: Sunghyun Jun Dev Note
+    title: Sunghyun Jun
     params:
+      description: "Notes on inference optimization, compilers, and scientific computing, with measurements."
       homeInfoParams:
         Title: "Hi, I'm Sunghyun Jun"
         Content: >-
@@ -49,8 +51,8 @@ taxonomies:
 
 params:
   env: production
-  title: Sunghyun Jun Dev Note
-  description: "Sunghyun Jun Dev Note"
+  title: Sunghyun Jun
+  description: "Notes on inference optimization, compilers, and scientific computing, with measurements."
   keywords: [Inference, GPU, CUDA, Compiler, PyTorch, Scientific Computing]
   author: Sunghyun Jun
   DateFormat: "January 2, 2006"
