@@ -25,17 +25,23 @@ languages:
     title: Sunghyun Jun Dev Note
     params:
       homeInfoParams:
-        Title: "Hi, I'm Sunghyun Jun 👋"
-        Content: Software Engineer, focused on inference optimization using PyTorch
+        Title: "전성현입니다"
+        Content: >-
+          GPU에서 모델을 빠르게 돌리는 일을 합니다.
+          TensorRT, vLLM, CUDA로 추론을 최적화하면서 직접 측정한 결과를 이곳에 기록합니다.
+          요즘은 컴파일러와 과학 계산으로 관심을 넓히고 있습니다.
   en:
     languageName: "🇺🇸 EN"
     languageCode: "en-us"
     weight: 2
-    title: Sunghyun Jun Dev Note (EN)
+    title: Sunghyun Jun Dev Note
     params:
       homeInfoParams:
-        Title: "Hi, I'm Sunghyun Jun 👋"
-        Content: Software Engineer, focused on inference optimization using PyTorch
+        Title: "Hi, I'm Sunghyun Jun"
+        Content: >-
+          I work on making models run fast on GPUs.
+          This blog records what I measure while optimizing inference with TensorRT, vLLM, and CUDA.
+          Lately I am also exploring compilers and scientific computing.
 
 taxonomies:
   category: categories
@@ -45,7 +51,7 @@ params:
   env: production
   title: Sunghyun Jun Dev Note
   description: "Sunghyun Jun Dev Note"
-  keywords: [Blog, Portfolio, PaperMod]
+  keywords: [Inference, GPU, CUDA, Compiler, PyTorch, Scientific Computing]
   author: Sunghyun Jun
   DateFormat: "January 2, 2006"
   defaultTheme: auto
