@@ -1,0 +1,85 @@
+<svg viewBox="0 0 720 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="세 가지 방법의 데이터 흐름. masked는 모든 행을 두 branch로 계산해 마스크로 고르고, gather_scatter는 nonzero로 행을 나눠 필요한 행만 계산한 뒤 제자리에 돌려놓고, 진짜 분기는 host가 조건값을 읽어 한쪽만 실행한다">
+<defs><marker id="ccArrow2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" class="n-gray"/></marker></defs>
+<rect x="8.0" y="8.0" width="232.0" height="384.0" rx="10" class="box-panel" stroke-width="1.2"/>
+<text x="124.0" y="38.0" text-anchor="middle" class="lbl" font-size="16" font-weight="700">masked</text>
+<text x="124.0" y="60.0" text-anchor="middle" class="lbl-sub" font-size="12.5">모든 행을 두 경로로 계산</text>
+<rect x="244.0" y="8.0" width="232.0" height="384.0" rx="10" class="box-panel" stroke-width="1.2"/>
+<text x="360.0" y="38.0" text-anchor="middle" class="lbl" font-size="16" font-weight="700">gather_scatter</text>
+<text x="360.0" y="60.0" text-anchor="middle" class="lbl-sub" font-size="12.5">필요한 행만 모아 계산</text>
+<rect x="480.0" y="8.0" width="232.0" height="384.0" rx="10" class="box-panel" stroke-width="1.2"/>
+<text x="596.0" y="38.0" text-anchor="middle" class="lbl" font-size="16" font-weight="700">진짜 분기</text>
+<text x="596.0" y="60.0" text-anchor="middle" class="lbl-sub" font-size="12.5">조건이 배치에 하나일 때</text>
+<rect x="69.0" y="76.0" width="110.0" height="32.0" rx="8" class="box-neutral" stroke-width="1.2"/>
+<text x="124.0" y="97.0" text-anchor="middle" class="lbl" font-size="13.5">x (N행)</text>
+<path d="M124.0 108.0 L70.0 128.0" class="edge" fill="none" stroke-width="1.6" marker-end="url(#ccArrow2)"/>
+<path d="M124.0 108.0 L178.0 128.0" class="edge" fill="none" stroke-width="1.6" marker-end="url(#ccArrow2)"/>
+<rect x="19.0" y="130.0" width="102.0" height="46.0" rx="8" class="box-neutral" stroke-width="1.2"/>
+<text x="70.0" y="150.0" text-anchor="middle" class="lbl" font-size="13">branch_fn_0</text>
+<text x="70.0" y="168.0" text-anchor="middle" class="lbl-sub" font-size="11.5">N행 전체</text>
+<rect x="127.0" y="130.0" width="102.0" height="46.0" rx="8" class="box-neutral" stroke-width="1.2"/>
+<text x="178.0" y="150.0" text-anchor="middle" class="lbl" font-size="13">branch_fn_1</text>
+<text x="178.0" y="168.0" text-anchor="middle" class="lbl-sub" font-size="11.5">N행 전체</text>
+<path d="M70.0 176.0 L70.0 192.0" class="edge" fill="none" stroke-width="1.6" marker-end="url(#ccArrow2)"/>
+<path d="M178.0 176.0 L178.0 192.0" class="edge" fill="none" stroke-width="1.6" marker-end="url(#ccArrow2)"/>
+<rect x="26.0" y="194.0" width="88.0" height="30.0" rx="8" class="box-neutral" stroke-width="1.2"/>
+<text x="70.0" y="214.0" text-anchor="middle" class="lbl" font-size="13">× mask0</text>
+<rect x="134.0" y="194.0" width="88.0" height="30.0" rx="8" class="box-neutral" stroke-width="1.2"/>
+<text x="178.0" y="214.0" text-anchor="middle" class="lbl" font-size="13">× mask1</text>
+<path d="M70.0 224.0 L112.0 246.0" class="edge" fill="none" stroke-width="1.6" marker-end="url(#ccArrow2)"/>
+<path d="M178.0 224.0 L136.0 246.0" class="edge" fill="none" stroke-width="1.6" marker-end="url(#ccArrow2)"/>
+<circle cx="124" cy="256" r="12" class="box-neutral" stroke-width="1.2"/>
+<text x="124.0" y="261.0" text-anchor="middle" class="lbl" font-size="15" font-weight="700">+</text>
+<path d="M124.0 268.0 L124.0 284.0" class="edge" fill="none" stroke-width="1.6" marker-end="url(#ccArrow2)"/>
+<rect x="69.0" y="286.0" width="110.0" height="32.0" rx="8" class="box-neutral" stroke-width="1.2"/>
+<text x="124.0" y="307.0" text-anchor="middle" class="lbl" font-size="13.5">y</text>
+<rect x="20.0" y="330.0" width="208.0" height="26.0" rx="13" class="t-red s-red" stroke-width="1.2"/>
+<text x="124.0" y="348.0" text-anchor="middle" class="lbl" font-size="12.5" font-weight="700">GEMM 2회</text>
+<rect x="20.0" y="362.0" width="208.0" height="26.0" rx="13" class="t-blue s-blue" stroke-width="1.2"/>
+<text x="124.0" y="380.0" text-anchor="middle" class="lbl" font-size="12.5" font-weight="700">shape 고정</text>
+<rect x="305.0" y="76.0" width="110.0" height="32.0" rx="8" class="box-neutral" stroke-width="1.2"/>
+<text x="360.0" y="97.0" text-anchor="middle" class="lbl" font-size="13.5">x (N행)</text>
+<path d="M360.0 108.0 L360.0 122.0" class="edge" fill="none" stroke-width="1.6" marker-end="url(#ccArrow2)"/>
+<rect x="270.0" y="124.0" width="180.0" height="32.0" rx="8" class="box-neutral" stroke-width="1.2"/>
+<text x="360.0" y="145.0" text-anchor="middle" class="lbl" font-size="13">nonzero() → 행 번호</text>
+<path d="M360.0 156.0 L308.0 172.0" class="edge" fill="none" stroke-width="1.6" marker-end="url(#ccArrow2)"/>
+<path d="M360.0 156.0 L412.0 172.0" class="edge" fill="none" stroke-width="1.6" marker-end="url(#ccArrow2)"/>
+<rect x="255.0" y="174.0" width="102.0" height="46.0" rx="8" class="box-neutral" stroke-width="1.2"/>
+<text x="306.0" y="194.0" text-anchor="middle" class="lbl" font-size="13">branch_fn_0</text>
+<text x="306.0" y="212.0" text-anchor="middle" class="lbl-sub" font-size="11.5">해당 행만</text>
+<rect x="363.0" y="174.0" width="102.0" height="46.0" rx="8" class="box-neutral" stroke-width="1.2"/>
+<text x="414.0" y="194.0" text-anchor="middle" class="lbl" font-size="13">branch_fn_1</text>
+<text x="414.0" y="212.0" text-anchor="middle" class="lbl-sub" font-size="11.5">나머지 행만</text>
+<path d="M306.0 220.0 L340.0 236.0" class="edge" fill="none" stroke-width="1.6" marker-end="url(#ccArrow2)"/>
+<path d="M414.0 220.0 L380.0 236.0" class="edge" fill="none" stroke-width="1.6" marker-end="url(#ccArrow2)"/>
+<rect x="265.0" y="238.0" width="190.0" height="32.0" rx="8" class="box-neutral" stroke-width="1.2"/>
+<text x="360.0" y="259.0" text-anchor="middle" class="lbl" font-size="13">index_copy_ → 제자리</text>
+<path d="M360.0 270.0 L360.0 284.0" class="edge" fill="none" stroke-width="1.6" marker-end="url(#ccArrow2)"/>
+<rect x="305.0" y="286.0" width="110.0" height="32.0" rx="8" class="box-neutral" stroke-width="1.2"/>
+<text x="360.0" y="307.0" text-anchor="middle" class="lbl" font-size="13.5">y</text>
+<rect x="256.0" y="330.0" width="208.0" height="26.0" rx="13" class="t-blue s-blue" stroke-width="1.2"/>
+<text x="360.0" y="348.0" text-anchor="middle" class="lbl" font-size="12.5" font-weight="700">GEMM 1회</text>
+<rect x="256.0" y="362.0" width="208.0" height="26.0" rx="13" class="t-red s-red" stroke-width="1.2"/>
+<text x="360.0" y="380.0" text-anchor="middle" class="lbl" font-size="12.5" font-weight="700">크기가 데이터에 따라 바뀜</text>
+<rect x="531.0" y="76.0" width="130.0" height="32.0" rx="8" class="box-neutral" stroke-width="1.2"/>
+<text x="596.0" y="97.0" text-anchor="middle" class="lbl" font-size="13.5">cond (스칼라)</text>
+<path d="M596.0 108.0 L596.0 122.0" class="edge" fill="none" stroke-width="1.6" marker-end="url(#ccArrow2)"/>
+<rect x="506.0" y="124.0" width="180.0" height="46.0" rx="8" class="t-amber s-amber" stroke-width="1.4"/>
+<text x="596.0" y="144.0" text-anchor="middle" class="lbl" font-size="13" font-weight="700">host가 조건값 읽기</text>
+<text x="596.0" y="162.0" text-anchor="middle" class="lbl-sub" font-size="11.5">D2H 복사</text>
+<path d="M596.0 170.0 L544.0 186.0" class="edge-dash" fill="none" stroke-width="1.6" marker-end="url(#ccArrow2)"/>
+<path d="M596.0 170.0 L648.0 186.0" class="edge-dash" fill="none" stroke-width="1.6" marker-end="url(#ccArrow2)"/>
+<rect x="491.0" y="188.0" width="102.0" height="46.0" rx="8" class="box-neutral" stroke-width="1.2"/>
+<text x="542.0" y="208.0" text-anchor="middle" class="lbl" font-size="13">branch_fn_0</text>
+<text x="542.0" y="226.0" text-anchor="middle" class="lbl-sub" font-size="11.5">참이면</text>
+<rect x="599.0" y="188.0" width="102.0" height="46.0" rx="8" class="box-neutral" stroke-width="1.2"/>
+<text x="650.0" y="208.0" text-anchor="middle" class="lbl" font-size="13">branch_fn_1</text>
+<text x="650.0" y="226.0" text-anchor="middle" class="lbl-sub" font-size="11.5">거짓이면</text>
+<path d="M542.0 234.0 L576.0 284.0" class="edge-dash" fill="none" stroke-width="1.6" marker-end="url(#ccArrow2)"/>
+<path d="M650.0 234.0 L616.0 284.0" class="edge-dash" fill="none" stroke-width="1.6" marker-end="url(#ccArrow2)"/>
+<rect x="541.0" y="286.0" width="110.0" height="32.0" rx="8" class="box-neutral" stroke-width="1.2"/>
+<text x="596.0" y="307.0" text-anchor="middle" class="lbl" font-size="13.5">y</text>
+<rect x="492.0" y="330.0" width="208.0" height="26.0" rx="13" class="t-blue s-blue" stroke-width="1.2"/>
+<text x="596.0" y="348.0" text-anchor="middle" class="lbl" font-size="12.5" font-weight="700">GEMM 1회</text>
+<rect x="492.0" y="362.0" width="208.0" height="26.0" rx="13" class="t-red s-red" stroke-width="1.2"/>
+<text x="596.0" y="380.0" text-anchor="middle" class="lbl" font-size="12.5" font-weight="700">조건값 읽기 필요</text>
+</svg>

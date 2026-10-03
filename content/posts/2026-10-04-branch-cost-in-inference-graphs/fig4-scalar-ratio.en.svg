@@ -1,0 +1,27 @@
+<svg viewBox="0 0 720 290" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Speed of a real branch under a scalar condition. PyTorch eager if was 2.33 times faster, torch.cond 2.18 times, TensorRT If 1.63 times, and only ONNX Runtime If was 1.64 times slower than masked">
+<text x="409.0" y="30.0" text-anchor="end" class="lbl-sub" font-size="13" font-weight="700">← masked faster</text>
+<text x="437.0" y="30.0" text-anchor="start" class="lbl-sub" font-size="13" font-weight="700">real branch faster →</text>
+<path d="M318.9 46 L318.9 232" class="edge" stroke-width="0.8" stroke-opacity="0.35" fill="none"/>
+<text x="318.9" y="252.0" text-anchor="middle" class="lbl-sub" font-size="12">1.5×</text>
+<path d="M527.1 46 L527.1 232" class="edge" stroke-width="0.8" stroke-opacity="0.35" fill="none"/>
+<text x="527.1" y="252.0" text-anchor="middle" class="lbl-sub" font-size="12">1.5×</text>
+<path d="M601.0 46 L601.0 232" class="edge" stroke-width="0.8" stroke-opacity="0.35" fill="none"/>
+<text x="601.0" y="252.0" text-anchor="middle" class="lbl-sub" font-size="12">2×</text>
+<path d="M658.3 46 L658.3 232" class="edge" stroke-width="0.8" stroke-opacity="0.35" fill="none"/>
+<text x="658.3" y="252.0" text-anchor="middle" class="lbl-sub" font-size="12">2.5×</text>
+<text x="423.0" y="252.0" text-anchor="middle" class="lbl-sub" font-size="12">1×</text>
+<text x="12.0" y="75.0" text-anchor="start" class="lbl" font-size="14">CPU · Python if (eager)</text>
+<rect x="423" y="56" width="217.7" height="28" rx="3" class="n-blue"><title>CPU · Python if (eager): masked 9.22 ms, real branch 3.95 ms, real branch 2.33× faster</title></rect>
+<text x="647.7" y="75.0" text-anchor="start" class="lbl" font-size="13.5" font-weight="700">2.33×</text>
+<text x="12.0" y="121.0" text-anchor="start" class="lbl" font-size="14">CPU · torch.cond (compile)</text>
+<rect x="423" y="102" width="200.1" height="28" rx="3" class="n-blue"><title>CPU · torch.cond (compile): masked 9.22 ms, real branch 4.23 ms, real branch 2.18× faster</title></rect>
+<text x="630.1" y="121.0" text-anchor="start" class="lbl" font-size="13.5" font-weight="700">2.18×</text>
+<text x="12.0" y="167.0" text-anchor="start" class="lbl" font-size="14">CPU · ONNX Runtime If</text>
+<rect x="295.3" y="148" width="127.7" height="28" rx="3" class="n-red"><title>CPU · ONNX Runtime If: masked 9.22 ms, real branch 15.16 ms, masked 1.64× faster</title></rect>
+<text x="288.3" y="167.0" text-anchor="end" class="lbl" font-size="13.5" font-weight="700">1.64×</text>
+<text x="12.0" y="213.0" text-anchor="start" class="lbl" font-size="14">A10G · TensorRT If</text>
+<rect x="423" y="194" width="125.5" height="28" rx="3" class="n-blue"><title>A10G · TensorRT If: masked 0.6929 ms, real branch 0.4251 ms, real branch 1.63× faster</title></rect>
+<text x="555.5" y="213.0" text-anchor="start" class="lbl" font-size="13.5" font-weight="700">1.63×</text>
+<path d="M423 46 L423 232" class="edge" stroke-width="1.6" fill="none"/>
+<text x="450.0" y="280.0" text-anchor="middle" class="lbl-sub" font-size="12">Bar length on a log scale · ratio = slower time ÷ faster time</text>
+</svg>
