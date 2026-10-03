@@ -1,0 +1,61 @@
+<svg viewBox="0 0 720 606" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Top: masked is faster at hidden_dim 8 and 32, gather_scatter at 128 and 1024. Bottom: with 2, 4, and 8 branches masked grows to 9.53, 18.78, and 37.92 ms while gather_scatter stays near 4.67, 5.39, and 6.90 ms">
+<text x="24.0" y="28.0" text-anchor="start" class="lbl" font-size="15" font-weight="700">(a) Speedup by hidden_dim</text>
+<text x="24.0" y="50.0" text-anchor="start" class="lbl-sub" font-size="12.5">masked time ÷ gather_scatter time · N=4096, split 0.5</text>
+<path d="M84 250.0 L690 250.0" class="edge" stroke-width="0.8" stroke-opacity="0.35" fill="none"/>
+<text x="76.0" y="254.0" text-anchor="end" class="lbl-sub" font-size="12">0.5×</text>
+<path d="M84 201.4 L690 201.4" class="edge-dash" stroke-width="1.4" fill="none"/>
+<text x="76.0" y="205.4" text-anchor="end" class="lbl-sub" font-size="12">1×</text>
+<path d="M84 152.9 L690 152.9" class="edge" stroke-width="0.8" stroke-opacity="0.35" fill="none"/>
+<text x="76.0" y="156.9" text-anchor="end" class="lbl-sub" font-size="12">1.5×</text>
+<path d="M84 104.3 L690 104.3" class="edge" stroke-width="0.8" stroke-opacity="0.35" fill="none"/>
+<text x="76.0" y="108.3" text-anchor="end" class="lbl-sub" font-size="12">2×</text>
+<text x="130.0" y="142.0" text-anchor="start" class="lbl-sub" font-size="12.5">↑ gather_scatter faster</text>
+<text x="470.0" y="240.0" text-anchor="start" class="lbl-sub" font-size="12.5">↓ masked faster</text>
+<path d="M120.0 214.5 L274.3 228.1 L428.6 184.2 L660.0 97.7" class="edge" fill="none" stroke-width="2.2"/>
+<rect x="114.0" y="208.5" width="12" height="12" rx="2" class="n-red"><title>hidden_dim 8: masked 0.142 ms, gather_scatter 0.164 ms (0.87×)</title></rect>
+<text x="120.0" y="238.5" text-anchor="middle" class="lbl" font-size="13.5" font-weight="700">0.87×</text>
+<rect x="268.3" y="222.1" width="12" height="12" rx="2" class="n-red"><title>hidden_dim 32: masked 0.256 ms, gather_scatter 0.353 ms (0.73×)</title></rect>
+<text x="274.3" y="252.1" text-anchor="middle" class="lbl" font-size="13.5" font-weight="700">0.73×</text>
+<circle cx="428.6" cy="184.2" r="6.5" class="n-blue"><title>hidden_dim 128: masked 0.563 ms, gather_scatter 0.478 ms (1.18×)</title></circle>
+<text x="416.6" y="174.2" text-anchor="end" class="lbl" font-size="13.5" font-weight="700">1.18×</text>
+<circle cx="660.0" cy="97.7" r="6.5" class="n-blue"><title>hidden_dim 1024: masked 9.74 ms, gather_scatter 4.71 ms (2.07×)</title></circle>
+<text x="648.0" y="93.7" text-anchor="end" class="lbl" font-size="13.5" font-weight="700">2.07×</text>
+<text x="120.0" y="272.0" text-anchor="middle" class="lbl-sub" font-size="12.5">8</text>
+<text x="274.3" y="272.0" text-anchor="middle" class="lbl-sub" font-size="12.5">32</text>
+<text x="428.6" y="272.0" text-anchor="middle" class="lbl-sub" font-size="12.5">128</text>
+<text x="660.0" y="272.0" text-anchor="middle" class="lbl-sub" font-size="12.5">1024</text>
+<text x="390.0" y="292.0" text-anchor="middle" class="lbl-sub" font-size="12.5">hidden_dim (log scale)</text>
+<path d="M24 312 L696 312" class="edge" stroke-width="0.8" stroke-opacity="0.35" fill="none"/>
+<text x="24.0" y="340.0" text-anchor="start" class="lbl" font-size="15" font-weight="700">(b) Run time by branch count</text>
+<text x="24.0" y="362.0" text-anchor="start" class="lbl-sub" font-size="12.5">N=4096, hidden_dim=1024</text>
+<path d="M84 560.0 L640 560.0" class="edge" stroke-width="0.8" stroke-opacity="0.35" fill="none"/>
+<text x="76.0" y="564.0" text-anchor="end" class="lbl-sub" font-size="12">0</text>
+<path d="M84 516.2 L640 516.2" class="edge" stroke-width="0.8" stroke-opacity="0.35" fill="none"/>
+<text x="76.0" y="520.2" text-anchor="end" class="lbl-sub" font-size="12">10</text>
+<path d="M84 472.5 L640 472.5" class="edge" stroke-width="0.8" stroke-opacity="0.35" fill="none"/>
+<text x="76.0" y="476.5" text-anchor="end" class="lbl-sub" font-size="12">20</text>
+<path d="M84 428.8 L640 428.8" class="edge" stroke-width="0.8" stroke-opacity="0.35" fill="none"/>
+<text x="76.0" y="432.8" text-anchor="end" class="lbl-sub" font-size="12">30</text>
+<path d="M84 385.0 L640 385.0" class="edge" stroke-width="0.8" stroke-opacity="0.35" fill="none"/>
+<text x="76.0" y="389.0" text-anchor="end" class="lbl-sub" font-size="12">40 ms</text>
+<path d="M430 352 L462 352" class="s-red" stroke-width="2.2" stroke-dasharray="6 4" fill="none"/>
+<rect x="440" y="346" width="12" height="12" rx="2" class="n-red"/>
+<text x="470.0" y="357.0" text-anchor="start" class="lbl" font-size="13">masked</text>
+<path d="M552 352 L584 352" class="s-blue" stroke-width="2.2" fill="none"/>
+<circle cx="568" cy="352" r="6" class="n-blue"/>
+<text x="592.0" y="357.0" text-anchor="start" class="lbl" font-size="13">gather_scatter</text>
+<path d="M140 518.3 L350 477.8 L560 394.1" class="s-red" stroke-width="2.2" stroke-dasharray="6 4" fill="none"/>
+<path d="M140 539.6 L350 536.4 L560 529.8" class="s-blue" stroke-width="2.2" fill="none"/>
+<rect x="134" y="512.3" width="12" height="12" rx="2" class="n-red"><title>masked, 2 branches: 9.53 ms</title></rect>
+<rect x="344" y="471.8" width="12" height="12" rx="2" class="n-red"><title>masked, 4 branches: 18.78 ms</title></rect>
+<rect x="554" y="388.1" width="12" height="12" rx="2" class="n-red"><title>masked, 8 branches: 37.92 ms</title></rect>
+<circle cx="140" cy="539.6" r="6" class="n-blue"><title>gather_scatter, 2 branches: 4.67 ms</title></circle>
+<circle cx="350" cy="536.4" r="6" class="n-blue"><title>gather_scatter, 4 branches: 5.39 ms</title></circle>
+<circle cx="560" cy="529.8" r="6" class="n-blue"><title>gather_scatter, 8 branches: 6.9 ms</title></circle>
+<text x="574.0" y="399.1" text-anchor="start" class="lbl" font-size="13.5" font-weight="700">37.92 ms</text>
+<text x="574.0" y="527.8" text-anchor="start" class="lbl" font-size="13.5" font-weight="700">6.90 ms</text>
+<text x="140.0" y="582.0" text-anchor="middle" class="lbl-sub" font-size="12.5">2</text>
+<text x="350.0" y="582.0" text-anchor="middle" class="lbl-sub" font-size="12.5">4</text>
+<text x="560.0" y="582.0" text-anchor="middle" class="lbl-sub" font-size="12.5">8</text>
+<text x="350.0" y="601.0" text-anchor="middle" class="lbl-sub" font-size="12.5">Number of branches</text>
+</svg>

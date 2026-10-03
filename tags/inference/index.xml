@@ -4,10 +4,18 @@
     <title>Inference on Sunghyun Jun Dev Note</title>
     <link>https://sunghyunjun.github.io/tags/inference/</link>
     <description>Recent content in Inference on Sunghyun Jun Dev Note</description>
-    <generator>Hugo -- 0.164.0</generator>
+    <generator>Hugo -- 0.167.0</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Thu, 23 Jul 2026 02:09:23 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 04 Oct 2026 00:23:34 +0900</lastBuildDate>
     <atom:link href="https://sunghyunjun.github.io/tags/inference/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>컴파일드 추론 그래프에서 분기문 하나의 비용</title>
+      <link>https://sunghyunjun.github.io/posts/2026-10-04-branch-cost-in-inference-graphs/</link>
+      <pubDate>Sun, 04 Oct 2026 00:00:00 +0900</pubDate>
+      <guid>https://sunghyunjun.github.io/posts/2026-10-04-branch-cost-in-inference-graphs/</guid>
+      <description>&lt;h3 id=&#34;1-분기문을-그래프-안에-넣어야-할-때&#34;&gt;1. 분기문을 그래프 안에 넣어야 할 때&lt;/h3&gt;
+&lt;p&gt;리서치 단계에서 PyTorch로 만든 모델을 서비스용 추론 엔진으로 옮기다 보면 자주 만나는 문제가 두 가지 있습니다. 하나는 입력 길이나 텐서 shape이 요청마다 달라지는 dynamic shape이고 다른 하나는 모델 안의 분기문입니다. 연구 코드에서는 파이썬 &lt;code&gt;if&lt;/code&gt; 한 줄로 끝나던 일을 TensorRT나 ONNX처럼 그래프를 미리 고정하는 런타임으로는 그대로 옮길 수 없습니다. 엔진을 빌드하거나 export하는 순간 코드는 한 번 트레이싱되어 고정된 연산 그래프가 됩니다. 이때 &lt;code&gt;if&lt;/code&gt;는 트레이싱할 때의 조건값 하나로 고정됩니다.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>추론 최적화, 무엇을 선택할 것인가</title>
       <link>https://sunghyunjun.github.io/posts/2026-07-19-inference-framework-landscape/</link>

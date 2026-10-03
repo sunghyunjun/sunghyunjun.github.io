@@ -1,25 +1,46 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Tags on Sunghyun Jun Dev Note (EN)</title>
+    <title>Tags on Sunghyun Jun Dev Note</title>
     <link>https://sunghyunjun.github.io/en/tags/</link>
-    <description>Recent content in Tags on Sunghyun Jun Dev Note (EN)</description>
-    <generator>Hugo -- 0.164.0</generator>
+    <description>Recent content in Tags on Sunghyun Jun Dev Note</description>
+    <generator>Hugo -- 0.167.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 23 Jul 2026 02:09:23 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 04 Oct 2026 00:23:34 +0900</lastBuildDate>
     <atom:link href="https://sunghyunjun.github.io/en/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Compiler</title>
       <link>https://sunghyunjun.github.io/en/tags/compiler/</link>
-      <pubDate>Sun, 19 Jul 2026 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 04 Oct 2026 00:00:00 +0900</pubDate>
       <guid>https://sunghyunjun.github.io/en/tags/compiler/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>CUDA</title>
+      <link>https://sunghyunjun.github.io/en/tags/cuda/</link>
+      <pubDate>Sun, 04 Oct 2026 00:00:00 +0900</pubDate>
+      <guid>https://sunghyunjun.github.io/en/tags/cuda/</guid>
       <description></description>
     </item>
     <item>
       <title>Inference</title>
       <link>https://sunghyunjun.github.io/en/tags/inference/</link>
-      <pubDate>Sun, 19 Jul 2026 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 04 Oct 2026 00:00:00 +0900</pubDate>
       <guid>https://sunghyunjun.github.io/en/tags/inference/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>PyTorch</title>
+      <link>https://sunghyunjun.github.io/en/tags/pytorch/</link>
+      <pubDate>Sun, 04 Oct 2026 00:00:00 +0900</pubDate>
+      <guid>https://sunghyunjun.github.io/en/tags/pytorch/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>TensorRT</title>
+      <link>https://sunghyunjun.github.io/en/tags/tensorrt/</link>
+      <pubDate>Sun, 04 Oct 2026 00:00:00 +0900</pubDate>
+      <guid>https://sunghyunjun.github.io/en/tags/tensorrt/</guid>
       <description></description>
     </item>
     <item>
@@ -34,13 +55,6 @@
       <link>https://sunghyunjun.github.io/en/tags/optimization/</link>
       <pubDate>Sun, 19 Jul 2026 00:00:00 +0000</pubDate>
       <guid>https://sunghyunjun.github.io/en/tags/optimization/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>PyTorch</title>
-      <link>https://sunghyunjun.github.io/en/tags/pytorch/</link>
-      <pubDate>Sun, 19 Jul 2026 00:00:00 +0000</pubDate>
-      <guid>https://sunghyunjun.github.io/en/tags/pytorch/</guid>
       <description></description>
     </item>
     <item>

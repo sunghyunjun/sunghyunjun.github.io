@@ -1,0 +1,35 @@
+<svg viewBox="0 0 720 308" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="왼쪽은 조건을 실행 전에 알 때 host가 엔진 A와 B 중 하나를 고르는 구조, 오른쪽은 루프 안의 레이어에 분기가 들어 있어 If를 품은 그래프 한 벌로 컴파일하는 구조">
+<defs><marker id="ccArrow1" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" class="n-gray"/></marker></defs>
+<rect x="8.0" y="8.0" width="348.0" height="292.0" rx="10" class="box-panel" stroke-width="1.2"/>
+<text x="188.0" y="40.0" text-anchor="middle" class="lbl n-blue" font-size="16" font-weight="700">그래프를 두 벌로 나누기</text>
+<text x="188.0" y="63.0" text-anchor="middle" class="lbl-sub" font-size="13">조건을 실행 전에 알 수 있을 때</text>
+<rect x="103.0" y="82.0" width="170.0" height="42.0" rx="8" class="box-neutral" stroke-width="1.2"/>
+<text x="188.0" y="108.0" text-anchor="middle" class="lbl" font-size="14">host가 조건 확인</text>
+<path d="M188.0 124.0 L110.0 160.0" class="edge" fill="none" stroke-width="1.6" marker-end="url(#ccArrow1)"/>
+<path d="M188.0 124.0 L266.0 160.0" class="edge" fill="none" stroke-width="1.6" marker-end="url(#ccArrow1)"/>
+<rect x="28.0" y="164.0" width="156.0" height="60.0" rx="8" class="t-blue s-blue" stroke-width="1.5"/>
+<text x="106.0" y="189.0" text-anchor="middle" class="lbl" font-size="14" font-weight="700">엔진 A</text>
+<text x="106.0" y="209.0" text-anchor="middle" class="lbl-sub" font-size="12">branch_fn_0 경로만</text>
+<rect x="192.0" y="164.0" width="156.0" height="60.0" rx="8" class="t-blue s-blue" stroke-width="1.5"/>
+<text x="270.0" y="189.0" text-anchor="middle" class="lbl" font-size="14" font-weight="700">엔진 B</text>
+<text x="270.0" y="209.0" text-anchor="middle" class="lbl-sub" font-size="12">branch_fn_1 경로만</text>
+<text x="188.0" y="266.0" text-anchor="middle" class="lbl-sub" font-size="13">엔진마다 분기 없는 정적 그래프</text>
+<rect x="364.0" y="8.0" width="348.0" height="292.0" rx="10" class="box-panel" stroke-width="1.2"/>
+<text x="538.0" y="40.0" text-anchor="middle" class="lbl n-red" font-size="16" font-weight="700">분기를 그래프 안에 넣기</text>
+<text x="538.0" y="63.0" text-anchor="middle" class="lbl-sub" font-size="13">분기가 루프 안에 있거나 많을 때</text>
+<rect x="384" y="80" width="160" height="166" rx="6" class="edge-dash" fill="none" stroke-width="1.2"/>
+<rect x="394.0" y="88.0" width="140.0" height="32.0" rx="6" class="box-neutral" stroke-width="1"/>
+<text x="464.0" y="109.0" text-anchor="middle" class="lbl" font-size="13.5">레이어 1</text>
+<rect x="394.0" y="127.0" width="140.0" height="32.0" rx="6" class="t-amber s-amber" stroke-width="1.4"/>
+<text x="464.0" y="148.0" text-anchor="middle" class="lbl" font-size="13.5" font-weight="700">레이어 2 · if</text>
+<rect x="394.0" y="166.0" width="140.0" height="32.0" rx="6" class="box-neutral" stroke-width="1"/>
+<text x="464.0" y="187.0" text-anchor="middle" class="lbl" font-size="13.5">레이어 3</text>
+<rect x="394.0" y="205.0" width="140.0" height="32.0" rx="6" class="t-amber s-amber" stroke-width="1.4"/>
+<text x="464.0" y="226.0" text-anchor="middle" class="lbl" font-size="13.5" font-weight="700">레이어 4 · if</text>
+<path d="M552 228 C 580 228, 580 104, 552 104" class="edge" fill="none" stroke-width="1.6" marker-end="url(#ccArrow1)"/>
+<text x="588.0" y="152.0" text-anchor="start" class="lbl-sub" font-size="13">N회 반복</text>
+<text x="588.0" y="192.0" text-anchor="start" class="lbl" font-size="13.5" font-weight="700">If를 품은</text>
+<text x="588.0" y="210.0" text-anchor="start" class="lbl" font-size="13.5" font-weight="700">그래프 한 벌</text>
+<text x="538.0" y="270.0" text-anchor="middle" class="lbl-sub" font-size="12.5">반복마다 조건이 바뀌어 엔진을 미리 고를 수 없음</text>
+<text x="538.0" y="288.0" text-anchor="middle" class="lbl-sub" font-size="12.5">분기가 n개면 엔진은 최대 2ⁿ벌</text>
+</svg>

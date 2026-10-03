@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://sunghyunjun.github.io/en/categories/</loc>
-    <lastmod>2026-07-23T02:09:23+09:00</lastmod>
+    <lastmod>2026-10-04T00:23:34+09:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ko-kr"
@@ -16,7 +16,7 @@
                 />
   </url><url>
     <loc>https://sunghyunjun.github.io/en/tags/compiler/</loc>
-    <lastmod>2026-07-23T02:09:23+09:00</lastmod>
+    <lastmod>2026-10-04T00:23:34+09:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ko-kr"
@@ -28,8 +28,21 @@
                 href="https://sunghyunjun.github.io/en/tags/compiler/"
                 />
   </url><url>
+    <loc>https://sunghyunjun.github.io/en/tags/cuda/</loc>
+    <lastmod>2026-10-04T00:23:34+09:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko-kr"
+                href="https://sunghyunjun.github.io/tags/cuda/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://sunghyunjun.github.io/en/tags/cuda/"
+                />
+  </url><url>
     <loc>https://sunghyunjun.github.io/en/categories/engineering/</loc>
-    <lastmod>2026-07-23T02:09:23+09:00</lastmod>
+    <lastmod>2026-10-04T00:23:34+09:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ko-kr"
@@ -42,7 +55,7 @@
                 />
   </url><url>
     <loc>https://sunghyunjun.github.io/en/tags/inference/</loc>
-    <lastmod>2026-07-23T02:09:23+09:00</lastmod>
+    <lastmod>2026-10-04T00:23:34+09:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ko-kr"
@@ -52,6 +65,84 @@
                 rel="alternate"
                 hreflang="en-us"
                 href="https://sunghyunjun.github.io/en/tags/inference/"
+                />
+  </url><url>
+    <loc>https://sunghyunjun.github.io/en/posts/</loc>
+    <lastmod>2026-10-04T00:23:34+09:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko-kr"
+                href="https://sunghyunjun.github.io/posts/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://sunghyunjun.github.io/en/posts/"
+                />
+  </url><url>
+    <loc>https://sunghyunjun.github.io/en/tags/pytorch/</loc>
+    <lastmod>2026-10-04T00:23:34+09:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko-kr"
+                href="https://sunghyunjun.github.io/tags/pytorch/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://sunghyunjun.github.io/en/tags/pytorch/"
+                />
+  </url><url>
+    <loc>https://sunghyunjun.github.io/en/</loc>
+    <lastmod>2026-10-04T00:23:34+09:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko-kr"
+                href="https://sunghyunjun.github.io/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://sunghyunjun.github.io/en/"
+                />
+  </url><url>
+    <loc>https://sunghyunjun.github.io/en/tags/</loc>
+    <lastmod>2026-10-04T00:23:34+09:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko-kr"
+                href="https://sunghyunjun.github.io/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://sunghyunjun.github.io/en/tags/"
+                />
+  </url><url>
+    <loc>https://sunghyunjun.github.io/en/tags/tensorrt/</loc>
+    <lastmod>2026-10-04T00:23:34+09:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko-kr"
+                href="https://sunghyunjun.github.io/tags/tensorrt/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://sunghyunjun.github.io/en/tags/tensorrt/"
+                />
+  </url><url>
+    <loc>https://sunghyunjun.github.io/en/posts/2026-10-04-branch-cost-in-inference-graphs/</loc>
+    <lastmod>2026-10-04T00:23:34+09:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko-kr"
+                href="https://sunghyunjun.github.io/posts/2026-10-04-branch-cost-in-inference-graphs/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://sunghyunjun.github.io/en/posts/2026-10-04-branch-cost-in-inference-graphs/"
                 />
   </url><url>
     <loc>https://sunghyunjun.github.io/en/posts/2026-07-19-inference-framework-landscape/</loc>
@@ -91,58 +182,6 @@
                 rel="alternate"
                 hreflang="en-us"
                 href="https://sunghyunjun.github.io/en/tags/optimization/"
-                />
-  </url><url>
-    <loc>https://sunghyunjun.github.io/en/posts/</loc>
-    <lastmod>2026-07-23T02:09:23+09:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko-kr"
-                href="https://sunghyunjun.github.io/posts/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-us"
-                href="https://sunghyunjun.github.io/en/posts/"
-                />
-  </url><url>
-    <loc>https://sunghyunjun.github.io/en/tags/pytorch/</loc>
-    <lastmod>2026-07-23T02:09:23+09:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko-kr"
-                href="https://sunghyunjun.github.io/tags/pytorch/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-us"
-                href="https://sunghyunjun.github.io/en/tags/pytorch/"
-                />
-  </url><url>
-    <loc>https://sunghyunjun.github.io/en/</loc>
-    <lastmod>2026-07-23T02:09:23+09:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko-kr"
-                href="https://sunghyunjun.github.io/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-us"
-                href="https://sunghyunjun.github.io/en/"
-                />
-  </url><url>
-    <loc>https://sunghyunjun.github.io/en/tags/</loc>
-    <lastmod>2026-07-23T02:09:23+09:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko-kr"
-                href="https://sunghyunjun.github.io/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-us"
-                href="https://sunghyunjun.github.io/en/tags/"
                 />
   </url><url>
     <loc>https://sunghyunjun.github.io/en/tags/gpu/</loc>
