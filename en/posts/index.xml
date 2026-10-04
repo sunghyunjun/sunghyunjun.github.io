@@ -6,8 +6,15 @@
     <description>Recent content in Posts on Sunghyun Jun</description>
     <generator>Hugo -- 0.167.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 04 Oct 2026 00:23:34 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 04 Oct 2026 01:01:48 +0900</lastBuildDate>
     <atom:link href="https://sunghyunjun.github.io/en/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Chunk First: When Does Prefill–Decode Disaggregation Pay Off over TCP?</title>
+      <link>https://sunghyunjun.github.io/en/posts/2026-10-04-pd-disaggregation-over-tcp/</link>
+      <pubDate>Sun, 04 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>https://sunghyunjun.github.io/en/posts/2026-10-04-pd-disaggregation-over-tcp/</guid>
+      <description>&lt;p&gt;Prefill–decode disaggregation (PD disaggregation from here on), which runs prefill and decode on different GPUs, has become one of the most discussed designs in LLM serving. vLLM and SGLang support it as a first-class path, and large services have published production numbers, so it can look like a settled choice. The published results share one premise, though. The nodes are connected by a fast interconnect such as InfiniBand or NVLink, and there are dozens of identical GPUs.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>The Cost of One Branch in a Compiled Inference Graph</title>
       <link>https://sunghyunjun.github.io/en/posts/2026-10-04-branch-cost-in-inference-graphs/</link>
