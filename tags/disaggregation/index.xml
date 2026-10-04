@@ -11,7 +11,7 @@
     <item>
       <title>청크 먼저: TCP 위의 Prefill·Decode 분리는 언제 이득인가</title>
       <link>https://sunghyunjun.github.io/posts/2026-10-04-pd-disaggregation-over-tcp/</link>
-      <pubDate>Sun, 04 Oct 2026 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 04 Oct 2026 00:00:00 +0900</pubDate>
       <guid>https://sunghyunjun.github.io/posts/2026-10-04-pd-disaggregation-over-tcp/</guid>
       <description>&lt;p&gt;최근 LLM 서빙 쪽에서는 prefill과 decode를 서로 다른 GPU로 떼어내는 분리 서빙(prefill–decode disaggregation, 이하 PD 분리)의 연구와 적용 사례가 활발하게 공유되고 있습니다. vLLM과 SGLang 같은 엔진이 공식 경로로 지원하고, 대형 서비스들이 실제 운영 수치를 내놓으면서 이제는 검증된 선택지처럼 보이기도 합니다. 다만 그 결과들에는 공통된 전제가 하나 있습니다. 노드 사이가 InfiniBand나 NVLink 같은 빠른 인터커넥트로 묶여 있고, 같은 종류의 GPU가 수십 장 이상 있다는 것입니다.&lt;/p&gt;
 &lt;p&gt;현업의 인프라 사정은 이와 다른 경우가 많습니다. 세대가 다른 GPU가 섞인 이기종 그룹을 운영하기도 하고, 노드 사이가 보통의 TCP 네트워크인 경우도 흔합니다. 클라우드에서 단일 GPU 인스턴스를 몇 대 빌려 쓰는 소규모 서비스라면 RDMA 자체가 선택지에 없습니다. 이런 환경에서 LLM 추론 서비스를 최적화하려 할 때 PD 분리는 여전히 고려할 만한 선택지인지, 아니면 복제본에 chunked prefill을 잘 맞추는 쪽이 나은지가 궁금했습니다. 이 조건에서 직접 잰 자료는 찾지 못했기 때문에 직접 측정해 보기로 했습니다.&lt;/p&gt;</description>
