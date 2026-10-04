@@ -9,6 +9,7 @@ enableRobotsTXT: true
 enableGitInfo: true
 buildDrafts: false
 buildFuture: false
+timeZone: Asia/Seoul
 buildExpired: false
 
 googleAnalytics: G-EFNS08FGBV
@@ -50,7 +51,6 @@ taxonomies:
   tag: tags
 
 params:
-  env: production
   title: Sunghyun Jun
   description: "Notes on inference optimization, compilers, and scientific computing, with measurements."
   keywords: [Inference, GPU, CUDA, Compiler, PyTorch, Scientific Computing]
