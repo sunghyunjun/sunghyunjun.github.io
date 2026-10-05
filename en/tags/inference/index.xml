@@ -6,49 +6,35 @@
     <description>Recent content in Inference on Sunghyun Jun</description>
     <generator>Hugo -- 0.167.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 04 Oct 2026 01:01:48 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 05 Oct 2026 20:29:24 +0900</lastBuildDate>
     <atom:link href="https://sunghyunjun.github.io/en/tags/inference/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Chunk First: When Does Prefill–Decode Disaggregation Pay Off over TCP?</title>
       <link>https://sunghyunjun.github.io/en/posts/2026-10-04-pd-disaggregation-over-tcp/</link>
       <pubDate>Sun, 04 Oct 2026 00:00:00 +0900</pubDate>
       <guid>https://sunghyunjun.github.io/en/posts/2026-10-04-pd-disaggregation-over-tcp/</guid>
-      <description>&lt;p&gt;Prefill–decode disaggregation (PD disaggregation from here on), which runs prefill and decode on different GPUs, has become one of the most discussed designs in LLM serving. vLLM and SGLang support it as a first-class path, and large services have published production numbers, so it can look like a settled choice. The published results share one premise, though. The nodes are connected by a fast interconnect such as InfiniBand or NVLink, and there are dozens of identical GPUs.&lt;/p&gt;</description>
+      <description>Prefill and decode disaggregation over TCP on small cloud GPU fleets, compared with chunk-tuned vLLM replicas over 455 runs, and the narrow conditions where splitting helps.</description>
     </item>
     <item>
       <title>The Cost of One Branch in a Compiled Inference Graph</title>
       <link>https://sunghyunjun.github.io/en/posts/2026-10-04-branch-cost-in-inference-graphs/</link>
       <pubDate>Sun, 04 Oct 2026 00:00:00 +0900</pubDate>
       <guid>https://sunghyunjun.github.io/en/posts/2026-10-04-branch-cost-in-inference-graphs/</guid>
-      <description>&lt;h3 id=&#34;1-when-a-branch-has-to-live-inside-the-graph&#34;&gt;1. When a branch has to live inside the graph&lt;/h3&gt;
-&lt;p&gt;Moving a research-stage PyTorch model into a production inference engine usually raises two problems. One is dynamic shape: input lengths and tensor shapes change from request to request. The other is branching inside the model. A Python &lt;code&gt;if&lt;/code&gt; that takes one line in research code does not carry over to runtimes that fix the graph ahead of time, such as TensorRT or ONNX. When you build an engine or export the model, the code is traced once and becomes a fixed computation graph. The &lt;code&gt;if&lt;/code&gt; is frozen to the condition value seen during tracing.&lt;/p&gt;</description>
+      <description>Three ways to compile a data-dependent branch into a static inference graph, measured on a CPU and an A10G GPU: compute cost, CUDA Graph capture, and host sync gaps.</description>
     </item>
     <item>
       <title>Inference Optimization: What Should You Choose?</title>
       <link>https://sunghyunjun.github.io/en/posts/2026-07-19-inference-framework-landscape/</link>
       <pubDate>Sun, 19 Jul 2026 00:00:00 +0900</pubDate>
       <guid>https://sunghyunjun.github.io/en/posts/2026-07-19-inference-framework-landscape/</guid>
-      <description>&lt;h3 id=&#34;1-an-overview-of-inference-optimization-techniques&#34;&gt;1. An Overview of Inference Optimization Techniques&lt;/h3&gt;
-&lt;p&gt;Running a model as a production service requires an inference optimization step. Reaching for a proven framework or library is the natural approach. Rather than writing kernels from scratch, it&amp;rsquo;s safer and more efficient to build on compilers and runtimes that other teams have already validated.&lt;/p&gt;
-&lt;p&gt;The problem is that this list of options changes fast. Up through 2024, TorchScript was the obvious starting point whenever inference optimization came up in the PyTorch world. By mid-2026, that landscape has shifted considerably (more on this in Section 4). It seems worth taking stock of what the options actually look like right now.&lt;/p&gt;</description>
+      <description>A 2026 map of inference options: graph compilers and runtimes, LLM serving engines, mobile and edge runtimes, and PyTorch deployment paths, with a device coverage matrix.</description>
     </item>
     <item>
       <title>Inference Optimization: How to Approach It</title>
       <link>https://sunghyunjun.github.io/en/posts/2025-10-19-inference-optimization/</link>
       <pubDate>Sun, 19 Oct 2025 00:00:00 +0900</pubDate>
       <guid>https://sunghyunjun.github.io/en/posts/2025-10-19-inference-optimization/</guid>
-      <description>&lt;p&gt;Understanding inference optimization and keeping up with the latest trends is very important. However, I believe what is even more critical is the ability to determine which technology is most suitable for a given situation.&lt;/p&gt;
-&lt;h2 id=&#34;basic-elements-of-inference-optimization&#34;&gt;Basic Elements of Inference Optimization&lt;/h2&gt;
-&lt;p&gt;Various approaches exist in the field of inference optimization.&lt;/p&gt;
-&lt;p&gt;Representative concepts include:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Compute-bound / Memory-bound analysis&lt;/li&gt;
-&lt;li&gt;Precision adjustment (FP16, BF16, INT8, etc.)&lt;/li&gt;
-&lt;li&gt;Kernel fusion &amp;amp; Compiler optimization&lt;/li&gt;
-&lt;li&gt;Quantization / Sparsity application strategies&lt;/li&gt;
-&lt;li&gt;Flash Attention, Speculative Decoding, etc.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;These concepts serve as &amp;lsquo;basic ingredients,&amp;rsquo; and researchers and engineers continue to push them to their limits. However, focusing solely on technical depth often leads to missing the fundamental question: &amp;ldquo;&lt;strong&gt;What are we optimizing for?&lt;/strong&gt;&amp;rdquo;&lt;/p&gt;</description>
+      <description>An overview of inference optimization techniques such as compute and memory bound analysis, precision, kernel fusion, and quantization, and how to choose among them.</description>
     </item>
   </channel>
 </rss>

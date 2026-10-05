@@ -6,42 +6,28 @@
     <description>Recent content in Optimization on Sunghyun Jun</description>
     <generator>Hugo -- 0.167.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 23 Jul 2026 02:09:23 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 05 Oct 2026 20:29:24 +0900</lastBuildDate>
     <atom:link href="https://sunghyunjun.github.io/en/tags/optimization/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Inference Optimization: What Should You Choose?</title>
       <link>https://sunghyunjun.github.io/en/posts/2026-07-19-inference-framework-landscape/</link>
       <pubDate>Sun, 19 Jul 2026 00:00:00 +0900</pubDate>
       <guid>https://sunghyunjun.github.io/en/posts/2026-07-19-inference-framework-landscape/</guid>
-      <description>&lt;h3 id=&#34;1-an-overview-of-inference-optimization-techniques&#34;&gt;1. An Overview of Inference Optimization Techniques&lt;/h3&gt;
-&lt;p&gt;Running a model as a production service requires an inference optimization step. Reaching for a proven framework or library is the natural approach. Rather than writing kernels from scratch, it&amp;rsquo;s safer and more efficient to build on compilers and runtimes that other teams have already validated.&lt;/p&gt;
-&lt;p&gt;The problem is that this list of options changes fast. Up through 2024, TorchScript was the obvious starting point whenever inference optimization came up in the PyTorch world. By mid-2026, that landscape has shifted considerably (more on this in Section 4). It seems worth taking stock of what the options actually look like right now.&lt;/p&gt;</description>
+      <description>A 2026 map of inference options: graph compilers and runtimes, LLM serving engines, mobile and edge runtimes, and PyTorch deployment paths, with a device coverage matrix.</description>
     </item>
     <item>
       <title>The Shift in GPU Optimization: From Threads to Tiles</title>
       <link>https://sunghyunjun.github.io/en/posts/2026-03-30-gpu-optimization-thread-to-tile/</link>
       <pubDate>Mon, 30 Mar 2026 00:00:00 +0900</pubDate>
       <guid>https://sunghyunjun.github.io/en/posts/2026-03-30-gpu-optimization-thread-to-tile/</guid>
-      <description>&lt;h3 id=&#34;1-introduction-the-fatigue-of-model-surgery&#34;&gt;1. Introduction: The Fatigue of Model Surgery&lt;/h3&gt;
-&lt;p&gt;In current practice, the most common task for ensuring inference performance when using ONNX Runtime or TensorRT &lt;a href=&#34;https://developer.nvidia.com/tensorrt&#34;&gt;[1]&lt;/a&gt; is &amp;lsquo;Model Rewriting.&amp;rsquo; This involves replacing operations not supported by inference engines like TensorRT or applying mathematical masking to remove &lt;code&gt;if&lt;/code&gt; branches that cause Graph Breaks in TorchDynamo &lt;a href=&#34;https://pytorch.org/get-started/pytorch-2.0/&#34;&gt;[2]&lt;/a&gt;. Such tasks can be described as manual interventions by engineers to force a static computation graph and improve compiler optimization efficiency.&lt;/p&gt;</description>
+      <description>Rewriting models for TensorRT and ONNX Runtime is tiring. This post follows GPU programming as it moves from threads to tiles with Triton, CuTe, Pallas, and CUDA Tile.</description>
     </item>
     <item>
       <title>Inference Optimization: How to Approach It</title>
       <link>https://sunghyunjun.github.io/en/posts/2025-10-19-inference-optimization/</link>
       <pubDate>Sun, 19 Oct 2025 00:00:00 +0900</pubDate>
       <guid>https://sunghyunjun.github.io/en/posts/2025-10-19-inference-optimization/</guid>
-      <description>&lt;p&gt;Understanding inference optimization and keeping up with the latest trends is very important. However, I believe what is even more critical is the ability to determine which technology is most suitable for a given situation.&lt;/p&gt;
-&lt;h2 id=&#34;basic-elements-of-inference-optimization&#34;&gt;Basic Elements of Inference Optimization&lt;/h2&gt;
-&lt;p&gt;Various approaches exist in the field of inference optimization.&lt;/p&gt;
-&lt;p&gt;Representative concepts include:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Compute-bound / Memory-bound analysis&lt;/li&gt;
-&lt;li&gt;Precision adjustment (FP16, BF16, INT8, etc.)&lt;/li&gt;
-&lt;li&gt;Kernel fusion &amp;amp; Compiler optimization&lt;/li&gt;
-&lt;li&gt;Quantization / Sparsity application strategies&lt;/li&gt;
-&lt;li&gt;Flash Attention, Speculative Decoding, etc.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;These concepts serve as &amp;lsquo;basic ingredients,&amp;rsquo; and researchers and engineers continue to push them to their limits. However, focusing solely on technical depth often leads to missing the fundamental question: &amp;ldquo;&lt;strong&gt;What are we optimizing for?&lt;/strong&gt;&amp;rdquo;&lt;/p&gt;</description>
+      <description>An overview of inference optimization techniques such as compute and memory bound analysis, precision, kernel fusion, and quantization, and how to choose among them.</description>
     </item>
   </channel>
 </rss>
