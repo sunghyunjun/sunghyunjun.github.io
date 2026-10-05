@@ -3,6 +3,9 @@ title: "Inference Optimization: How to Approach It"
 date: 2025-10-19
 categories: [Engineering]
 tags: [inference, optimization]
+description: "An overview of inference optimization techniques such as compute and memory bound analysis, precision, kernel fusion, and quantization, and how to choose among them."
+summary: "An overview of inference optimization techniques such as compute and memory bound analysis, precision, kernel fusion, and quantization, and how to choose among them."
+images: ["og/2025-10-19-inference-optimization-en.png"]
 draft: false
 ---
 

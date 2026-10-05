@@ -3,6 +3,9 @@ title: "Chunk First: When Does Prefill–Decode Disaggregation Pay Off over TCP?
 date: 2026-10-04
 categories: [Engineering]
 tags: [Inference, LLM, vLLM, Serving, Disaggregation]
+description: "Prefill and decode disaggregation over TCP on small cloud GPU fleets, compared with chunk-tuned vLLM replicas over 455 runs, and the narrow conditions where splitting helps."
+summary: "Prefill and decode disaggregation over TCP on small cloud GPU fleets, compared with chunk-tuned vLLM replicas over 455 runs, and the narrow conditions where splitting helps."
+images: ["og/2026-10-04-pd-disaggregation-over-tcp-en.png"]
 draft: false
 ---
 

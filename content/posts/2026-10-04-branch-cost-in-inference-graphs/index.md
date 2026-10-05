@@ -3,6 +3,9 @@ title: "컴파일드 추론 그래프에서 분기문 하나의 비용"
 date: 2026-10-04T00:00:00+09:00
 categories: [Engineering]
 tags: [Inference, Compiler, CUDA, TensorRT, PyTorch]
+description: "분기문을 정적 추론 그래프에 넣는 세 가지 방법을 CPU와 A10G GPU에서 측정하고 계산량, CUDA Graph 캡처, host 동기화 비용을 비교합니다."
+summary: "분기문을 정적 추론 그래프에 넣는 세 가지 방법을 CPU와 A10G GPU에서 측정하고 계산량, CUDA Graph 캡처, host 동기화 비용을 비교합니다."
+images: ["og/2026-10-04-branch-cost-in-inference-graphs-ko.png"]
 draft: false
 ---
 

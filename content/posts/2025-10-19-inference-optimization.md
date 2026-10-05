@@ -3,6 +3,9 @@ title: "추론 최적화, 어떻게 접근할 것인가"
 date: 2025-10-19
 categories: [Engineering]
 tags: [inference, optimization]
+description: "연산·메모리 분석, 정밀도, 커널 융합, 양자화 같은 추론 최적화 기법을 정리하고 상황에 맞는 기법을 고르는 기준을 살펴봅니다."
+summary: "연산·메모리 분석, 정밀도, 커널 융합, 양자화 같은 추론 최적화 기법을 정리하고 상황에 맞는 기법을 고르는 기준을 살펴봅니다."
+images: ["og/2025-10-19-inference-optimization-ko.png"]
 draft: false
 ---
 

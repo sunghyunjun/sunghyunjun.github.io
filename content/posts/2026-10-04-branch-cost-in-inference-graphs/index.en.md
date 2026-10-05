@@ -3,6 +3,9 @@ title: "The Cost of One Branch in a Compiled Inference Graph"
 date: 2026-10-04T00:00:00+09:00
 categories: [Engineering]
 tags: [Inference, Compiler, CUDA, TensorRT, PyTorch]
+description: "Three ways to compile a data-dependent branch into a static inference graph, measured on a CPU and an A10G GPU: compute cost, CUDA Graph capture, and host sync gaps."
+summary: "Three ways to compile a data-dependent branch into a static inference graph, measured on a CPU and an A10G GPU: compute cost, CUDA Graph capture, and host sync gaps."
+images: ["og/2026-10-04-branch-cost-in-inference-graphs-en.png"]
 draft: false
 ---
 

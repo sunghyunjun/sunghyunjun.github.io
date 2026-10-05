@@ -3,6 +3,9 @@ title: "GPU 최적화의 단위 변화: Thread에서 Tile로"
 date: 2026-03-30
 categories: [Engineering]
 tags: [GPU, Optimization, Compiler, MLIR]
+description: "TensorRT·ONNX Runtime용 모델 리라이팅의 부담에서 출발해 Triton, CuTe, Pallas, CUDA Tile로 이어지는 타일 단위 GPU 프로그래밍의 흐름을 정리합니다."
+summary: "TensorRT·ONNX Runtime용 모델 리라이팅의 부담에서 출발해 Triton, CuTe, Pallas, CUDA Tile로 이어지는 타일 단위 GPU 프로그래밍의 흐름을 정리합니다."
+images: ["og/2026-03-30-gpu-optimization-thread-to-tile-ko.png"]
 draft: false
 ---
 

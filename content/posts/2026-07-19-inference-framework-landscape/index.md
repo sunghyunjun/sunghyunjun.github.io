@@ -3,6 +3,9 @@ title: "추론 최적화, 무엇을 선택할 것인가"
 date: 2026-07-19
 categories: [Engineering]
 tags: [Inference, Optimization, PyTorch, LLM, Compiler]
+description: "범용 그래프 컴파일러·런타임, LLM 서빙 엔진, 모바일·엣지 런타임, PyTorch 배포 경로의 변화를 2026년 기준으로 정리하고 디바이스별 지원 범위를 비교합니다."
+summary: "범용 그래프 컴파일러·런타임, LLM 서빙 엔진, 모바일·엣지 런타임, PyTorch 배포 경로의 변화를 2026년 기준으로 정리하고 디바이스별 지원 범위를 비교합니다."
+images: ["og/2026-07-19-inference-framework-landscape-ko.png"]
 draft: false
 ---
 

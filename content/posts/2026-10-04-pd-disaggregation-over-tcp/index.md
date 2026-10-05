@@ -3,6 +3,9 @@ title: "청크 먼저: TCP 위의 Prefill·Decode 분리는 언제 이득인가"
 date: 2026-10-04
 categories: [Engineering]
 tags: [Inference, LLM, vLLM, Serving, Disaggregation]
+description: "RDMA 없는 소규모 클라우드 GPU에서 prefill·decode 분리와 청크를 조정한 vLLM 복제본을 455번의 실행으로 비교하고 분리가 이득인 조건을 정리합니다."
+summary: "RDMA 없는 소규모 클라우드 GPU에서 prefill·decode 분리와 청크를 조정한 vLLM 복제본을 455번의 실행으로 비교하고 분리가 이득인 조건을 정리합니다."
+images: ["og/2026-10-04-pd-disaggregation-over-tcp-ko.png"]
 draft: false
 ---
 

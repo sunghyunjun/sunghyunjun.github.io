@@ -3,6 +3,9 @@ title: "Inference Optimization: What Should You Choose?"
 date: 2026-07-19
 categories: [Engineering]
 tags: [Inference, Optimization, PyTorch, LLM, Compiler]
+description: "A 2026 map of inference options: graph compilers and runtimes, LLM serving engines, mobile and edge runtimes, and PyTorch deployment paths, with a device coverage matrix."
+summary: "A 2026 map of inference options: graph compilers and runtimes, LLM serving engines, mobile and edge runtimes, and PyTorch deployment paths, with a device coverage matrix."
+images: ["og/2026-07-19-inference-framework-landscape-en.png"]
 draft: false
 ---
 

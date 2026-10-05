@@ -3,6 +3,9 @@ title: "The Shift in GPU Optimization: From Threads to Tiles"
 date: 2026-03-30
 categories: [Engineering]
 tags: [GPU, Optimization, Compiler, MLIR]
+description: "Rewriting models for TensorRT and ONNX Runtime is tiring. This post follows GPU programming as it moves from threads to tiles with Triton, CuTe, Pallas, and CUDA Tile."
+summary: "Rewriting models for TensorRT and ONNX Runtime is tiring. This post follows GPU programming as it moves from threads to tiles with Triton, CuTe, Pallas, and CUDA Tile."
+images: ["og/2026-03-30-gpu-optimization-thread-to-tile-en.png"]
 draft: false
 ---
 
