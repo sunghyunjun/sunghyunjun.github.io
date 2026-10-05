@@ -1,0 +1,17 @@
+{{- /* Owner opt-out for Google Analytics, per browser.
+  Visit any page with ?notrack=1 once to stop sending page views from this
+  browser, or ?notrack=0 to start again. The flag lives in this site's
+  localStorage. PaperMod includes this partial before google_analytics.html,
+  so the gtag disable switch is set before GA runs. */ -}}
+<script>
+  (function () {
+    var KEY = 'ga-optout';
+    var ID = '{{ site.Config.Services.GoogleAnalytics.ID }}';
+    try {
+      var q = new URLSearchParams(location.search).get('notrack');
+      if (q === '1') localStorage.setItem(KEY, '1');
+      if (q === '0') localStorage.removeItem(KEY);
+      if (localStorage.getItem(KEY) === '1') window['ga-disable-' + ID] = true;
+    } catch (e) {}
+  })();
+</script>
