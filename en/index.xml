@@ -4,9 +4,9 @@
     <title>Sunghyun Jun</title>
     <link>https://sunghyunjun.github.io/en/</link>
     <description>Recent content on Sunghyun Jun</description>
-    <generator>Hugo -- 0.167.0</generator>
+    <generator>Hugo -- 0.169.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 05 Oct 2026 20:29:24 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 11 Nov 2026 11:39:38 +0900</lastBuildDate>
     <atom:link href="https://sunghyunjun.github.io/en/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Chunk First: When Does Prefill–Decode Disaggregation Pay Off over TCP?</title>
@@ -14,6 +14,13 @@
       <pubDate>Sun, 04 Oct 2026 00:00:00 +0900</pubDate>
       <guid>https://sunghyunjun.github.io/en/posts/2026-10-04-pd-disaggregation-over-tcp/</guid>
       <description>Prefill and decode disaggregation over TCP on small cloud GPU fleets, compared with chunk-tuned vLLM replicas over 455 runs, and the narrow conditions where splitting helps.</description>
+    </item>
+    <item>
+      <title>Chunk First: When Prefill–Decode Disaggregation Pays Off over TCP</title>
+      <link>https://sunghyunjun.github.io/en/papers/chunk-first/</link>
+      <pubDate>Sun, 04 Oct 2026 00:00:00 +0900</pubDate>
+      <guid>https://sunghyunjun.github.io/en/papers/chunk-first/</guid>
+      <description>Technical report, version 1.0. Measurements and a calibrated model on single-GPU cloud instances.</description>
     </item>
     <item>
       <title>The Cost of One Branch in a Compiled Inference Graph</title>

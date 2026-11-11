@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://sunghyunjun.github.io/en/categories/</loc>
-    <lastmod>2026-10-05T20:29:24+09:00</lastmod>
+    <lastmod>2026-11-11T11:39:38+09:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ko-kr"
@@ -16,7 +16,7 @@
                 />
   </url><url>
     <loc>https://sunghyunjun.github.io/en/posts/2026-10-04-pd-disaggregation-over-tcp/</loc>
-    <lastmod>2026-10-05T20:29:24+09:00</lastmod>
+    <lastmod>2026-11-11T11:39:38+09:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ko-kr"
@@ -27,6 +27,9 @@
                 hreflang="en-us"
                 href="https://sunghyunjun.github.io/en/posts/2026-10-04-pd-disaggregation-over-tcp/"
                 />
+  </url><url>
+    <loc>https://sunghyunjun.github.io/en/papers/chunk-first/</loc>
+    <lastmod>2026-11-11T11:39:38+09:00</lastmod>
   </url><url>
     <loc>https://sunghyunjun.github.io/en/tags/compiler/</loc>
     <lastmod>2026-10-05T20:29:24+09:00</lastmod>
@@ -55,7 +58,7 @@
                 />
   </url><url>
     <loc>https://sunghyunjun.github.io/en/tags/disaggregation/</loc>
-    <lastmod>2026-10-05T20:29:24+09:00</lastmod>
+    <lastmod>2026-11-11T11:39:38+09:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ko-kr"
@@ -68,7 +71,7 @@
                 />
   </url><url>
     <loc>https://sunghyunjun.github.io/en/categories/engineering/</loc>
-    <lastmod>2026-10-05T20:29:24+09:00</lastmod>
+    <lastmod>2026-11-11T11:39:38+09:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ko-kr"
@@ -81,7 +84,7 @@
                 />
   </url><url>
     <loc>https://sunghyunjun.github.io/en/tags/inference/</loc>
-    <lastmod>2026-10-05T20:29:24+09:00</lastmod>
+    <lastmod>2026-11-11T11:39:38+09:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ko-kr"
@@ -94,7 +97,7 @@
                 />
   </url><url>
     <loc>https://sunghyunjun.github.io/en/tags/llm/</loc>
-    <lastmod>2026-10-05T20:29:24+09:00</lastmod>
+    <lastmod>2026-11-11T11:39:38+09:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ko-kr"
@@ -106,8 +109,11 @@
                 href="https://sunghyunjun.github.io/en/tags/llm/"
                 />
   </url><url>
+    <loc>https://sunghyunjun.github.io/en/papers/</loc>
+    <lastmod>2026-11-11T11:39:38+09:00</lastmod>
+  </url><url>
     <loc>https://sunghyunjun.github.io/en/posts/</loc>
-    <lastmod>2026-10-05T20:29:24+09:00</lastmod>
+    <lastmod>2026-11-11T11:39:38+09:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ko-kr"
@@ -133,7 +139,7 @@
                 />
   </url><url>
     <loc>https://sunghyunjun.github.io/en/tags/serving/</loc>
-    <lastmod>2026-10-05T20:29:24+09:00</lastmod>
+    <lastmod>2026-11-11T11:39:38+09:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ko-kr"
@@ -146,7 +152,7 @@
                 />
   </url><url>
     <loc>https://sunghyunjun.github.io/en/</loc>
-    <lastmod>2026-10-05T20:29:24+09:00</lastmod>
+    <lastmod>2026-11-11T11:39:38+09:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ko-kr"
@@ -159,7 +165,7 @@
                 />
   </url><url>
     <loc>https://sunghyunjun.github.io/en/tags/</loc>
-    <lastmod>2026-10-05T20:29:24+09:00</lastmod>
+    <lastmod>2026-11-11T11:39:38+09:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ko-kr"
@@ -198,7 +204,7 @@
                 />
   </url><url>
     <loc>https://sunghyunjun.github.io/en/tags/vllm/</loc>
-    <lastmod>2026-10-05T20:29:24+09:00</lastmod>
+    <lastmod>2026-11-11T11:39:38+09:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ko-kr"
