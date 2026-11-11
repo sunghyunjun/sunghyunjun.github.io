@@ -115,6 +115,10 @@ menu:
       name: tags
       url: /tags/
       weight: 20
+    - identifier: papers
+      name: papers
+      url: /en/papers/
+      weight: 30
 
 pygmentsUseClasses: true
 markup:
