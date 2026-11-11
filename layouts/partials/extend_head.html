@@ -15,3 +15,26 @@
     } catch (e) {}
   })();
 </script>
+{{- /* Google Scholar (Highwire Press) tags for paper pages that set
+  `citation` in front matter. citation_pdf_url points at the PDF in
+  static/ so Scholar pairs it with this abstract page. */ -}}
+{{- with .Params.citation }}
+<meta name="citation_title" content="{{ .title }}">
+{{- range .authors }}
+<meta name="citation_author" content="{{ . }}">
+{{- end }}
+<meta name="citation_publication_date" content="{{ .date }}">
+<meta name="citation_online_date" content="{{ .date }}">
+{{- with .number }}
+<meta name="citation_technical_report_number" content="{{ . }}">
+{{- end }}
+<meta name="citation_pdf_url" content="{{ .pdf | absURL }}">
+<meta name="citation_abstract_html_url" content="{{ $.Permalink }}">
+{{- with .doi }}
+<meta name="citation_doi" content="{{ . }}">
+{{- end }}
+<meta name="citation_language" content="en">
+{{- with .keywords }}
+<meta name="citation_keywords" content="{{ delimit . "; " }}">
+{{- end }}
+{{- end }}

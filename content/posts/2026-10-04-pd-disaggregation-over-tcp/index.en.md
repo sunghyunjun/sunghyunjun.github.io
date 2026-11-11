@@ -72,5 +72,5 @@ Carrying PD disaggregation numbers from fast interconnects into a small TCP setu
 
 This is one person's measurement of one model family on three instance types, with no RDMA baseline, and the boundary in Section 5 is a prediction. Read the scope accordingly. The protocol was committed before the first run, and the report records every point where the study departed from it. If you have measured the same question on mixed GPU groups or another model family, I would like to compare notes.
 
-- Technical report: [doi:10.5281/zenodo.23085600](https://doi.org/10.5281/zenodo.23085600)
+- Technical report: [doi:10.5281/zenodo.23085600](https://doi.org/10.5281/zenodo.23085600) ([abstract and PDF](/en/papers/chunk-first/))
 - Code, configurations, and per-request data: [github.com/sunghyunjun/pd-disaggregation-over-tcp](https://github.com/sunghyunjun/pd-disaggregation-over-tcp), archived at [doi:10.5281/zenodo.23085749](https://doi.org/10.5281/zenodo.23085749)

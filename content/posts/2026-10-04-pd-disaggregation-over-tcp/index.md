@@ -74,5 +74,5 @@ prefill 청크 크기입니다. 복제본에서는 다른 요청의 prefill 청�
 
 이 결과는 한 사람이 한 모델 계열을 인스턴스 세 종류에서 잰 것입니다. RDMA 기준선은 없고 5절의 경계는 예측입니다. 적용 범위는 그만큼 좁게 읽어 주시면 좋겠습니다. 프로토콜은 첫 런 전에 커밋해 두었고 보고서에는 사전 등록과 어긋난 지점까지 적었습니다. 이기종 GPU 그룹이나 다른 모델 계열에서 같은 방법으로 재 본 결과가 있다면 함께 비교해 보고 싶습니다.
 
-- 테크니컬 리포트: [doi:10.5281/zenodo.23085600](https://doi.org/10.5281/zenodo.23085600)
+- 테크니컬 리포트: [doi:10.5281/zenodo.23085600](https://doi.org/10.5281/zenodo.23085600) ([초록과 PDF](/en/papers/chunk-first/))
 - 코드, 설정, 요청별 데이터: [github.com/sunghyunjun/pd-disaggregation-over-tcp](https://github.com/sunghyunjun/pd-disaggregation-over-tcp), 보관본 [doi:10.5281/zenodo.23085749](https://doi.org/10.5281/zenodo.23085749)
